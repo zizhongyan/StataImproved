@@ -120,7 +120,7 @@ This method is safer and quicker. If you do not have the package control system 
 
 1, In the ST3, press `super+shift+p` to have the package control box, type `package control: install package`, press enter. 
 
-2, Then type `Stata Improved Editor macOS` you will find it from a dropdown list, and choose it to install. 
+2, Then type `Stata Improved Editor` you will find it from a dropdown list, and choose it to install. 
 
 #### Or manually
 Download these files from here, and unpack it into the folder: `~/Library/Application Support/Sublime Text 3/Packages`. How to access this folder? In the finder, press `super+shift+g`, type the folder path in the box, and press `enter`.
