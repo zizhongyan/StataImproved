@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+save "${1:file}.dta" , replace  
+]]></content>
+	<tabTrigger>sav</tabTrigger>
+	<scope>source.stata</scope>scope>
+	<description>Save</description>description
+</snippet>

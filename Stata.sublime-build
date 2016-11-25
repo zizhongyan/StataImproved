@@ -1,0 +1,10 @@
+{
+  "selector": "source.stata",
+  "osx": 
+  {
+    "cmd": ["osascript", 
+            "-e", "try",
+            "-e", "tell application \"Finder\" to activate & open POSIX file \"$file\"",
+            "-e", "end try"]
+  }
+}

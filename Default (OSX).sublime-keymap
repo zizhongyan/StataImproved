@@ -1,0 +1,48 @@
+[
+  { "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/StataImproved/StataImproved-macro.sublime-macro"}, "context":
+      [
+        { "key": "selector", "operator": "equal", "operand": "source.stata" }
+      ]
+  }  , 
+  { "keys": ["f1"], "command": "stata_help", "context":
+  	[
+  		{ "key": "selector", "operator": "equal", "operand": "source.stata" }
+  	]
+  } ,
+  { "keys": ["f2"], "command": "stata_bro", "context":
+  	[
+  		{ "key": "selector", "operator": "equal", "operand": "source.stata" }
+  	]
+  } ,
+  {
+  	"keys": ["ctrl+shift+d"], "command": "piu_sign"
+  },
+  {
+  	"keys": ["ctrl+s"], "command": "insert", "args": {"characters": "\n /* -Piu_Sign- (Code Break Line) - (by Stata Editor for macOS (github) )  */"}
+  },
+  { "keys": ["super+`"], "command": "stata_local", "context":
+    [
+      { "key": "selector", "operator": "equal", "operand": "source.stata" }
+    ]
+  },
+  { "keys": ["super+4"], "command": "stata_macro", "context":
+    [
+      { "key": "selector", "operator": "equal", "operand": "source.stata" }
+    ]
+  },
+  { "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`$0'"}, "context":
+    [
+      { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+      { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+      { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.single", "match_all": true },
+      { "key": "selector", "operator": "equal", "operand": "source.stata", "match_all": true }
+    ]
+  },
+  { "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`${0:$SELECTION}'"}, "context":
+    [
+      { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+      { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+      { "key": "selector", "operator": "equal", "operand": "source.stata", "match_all": true }
+    ]
+  }, 
+]  

@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[ 
+/*------------------------- 
+	To Do:
+		 1.${1:first}  
+		 2.${2:second}  
+-------------------------*/ 
+]]></content>
+	<tabTrigger>comm-t</tabTrigger>
+	<scope>source.stata</scope>scope>
+	<description>To Do List</description>description
+</snippet>

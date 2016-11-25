@@ -1,0 +1,72 @@
+[
+    {
+        "id": "tools",
+        "children":
+        [
+            {
+                "caption": "Improved Stata Editor for macOS",
+                "children":
+                [
+                    {
+                        "caption": "Send selected code to Stata",
+                        "command": "lines_to_stata"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "Stata Editor for macOS",
+                        "children":
+                        [
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/MacStataEditor/MacStataEditor (OSX).sublime-settings",
+                                    "platform": "OSX"
+                                },
+                                "caption": "Settings – Default"
+                            }, 
+                            {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/User/MacStataEditor.sublime-settings"},
+                                "caption": "Settings – User"
+                            },
+                            {
+                                "command": "open_file_settings",
+                                "caption": "Settings – Syntax Specific – User"
+                            },
+                            { "caption": "-" },
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/MacStataEditor/Default (OSX).sublime-keymap",
+                                    "platform": "OSX"
+                                },
+                                "caption": "Key Bindings – Default"
+                            }, 
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/User/Default (OSX).sublime-keymap",
+                                    "platform": "OSX"
+                                },
+                                "caption": "Key Bindings – User"
+                            } 
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

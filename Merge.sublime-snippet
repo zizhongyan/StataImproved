@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+merge  ${1:how}  ${2:variables} using "${3:file}.dta"   
+]]></content>
+	<tabTrigger>mer</tabTrigger>
+	<scope>source.stata</scope>scope>
+	<description>Merge</description>description
+</snippet>

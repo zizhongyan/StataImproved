@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+foreach ${1:w} in ${2:varlist} {
+	$0
+}  // end of foreach ${1:w} in ${2:varlist}
+]]></content>
+	<tabTrigger>fore</tabTrigger>
+	<scope>source.stata</scope>scope>
+	<description>Foreach</description>description
+</snippet>

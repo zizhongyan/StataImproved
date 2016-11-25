@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+/*  Section: ${1:title}  			
+    ${2:Notes:} */
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+${3:Content}	
+
+
+
+*-*-*-*-*-*-*-* End of the Section ${1:title} *-*-*-*-*-*-*-*-*-*-*
+
+]]></content>
+	<tabTrigger>comm-s</tabTrigger>
+	<scope>source.stata</scope>scope>
+	<description>Section Header</description>description
+</snippet>
