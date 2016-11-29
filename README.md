@@ -9,15 +9,18 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 #### 2, Split the do-file into cells, and execute a block of do-file (just like what you do in Matlab) !!
 #### 3, Automated Section Header, Comments toggle, and To Do List.
 #### 4, Auto-completion for i) common used commands, ii) for loops, iii) writing program.
-#### 5, Select any word, press \` to make it as \`word'. 
-#### 6, Select any word, press `cmd+4` to make it as ${word}. 
-#### 7, Select any command, press `F1` to see the help file. 
+#### 5, Select any **word**, press \`, it will become **\`word'**. 
+#### 6, Select any **word**, press `cmd+4`, it will become **${word}**. 
+#### 7, Select any command, press `F1` to see its help file. 
 #### 8, Select any variable(s), press `F2` to see the data browser. 
 #### 9, Improved Stata Syntax-highlighting  
 
 
 
 ## Usage 
+### DEMO (YouTube)
+https://www.youtube.com/watch?v=4vvsk8lG6fY&t=389s
+
 ### Code Execution
 `ctrl+d` -- Execute selected codes. if no code is selected, execute the current line.
 ### Matlab Style Execution for a Block
@@ -110,20 +113,11 @@ Select any word, press `cmd+4` to make it as ${word}.
 ### Data Browser
 Select any variable(s), press `F2` to see the data browser.
 
-#Configurations
+#Installations
 
-###Step 1, Installation
-Two ways:
-
-#### Install via package control. 
-This method is safer and quicker. If you do not have the package control system in your ST3, you will need to install it in advance. To install it, please go to [this webpage](https://packagecontrol.io/installation).
-
-1, In the ST3, press `super+shift+p` to have the package control box, type `package control: install package`, press enter. 
-
-2, Then type `Stata Improved Editor` you will find it from a dropdown list, and choose it to install. 
-
-#### Or manually
-Download these files from here, and unpack it into the folder: `~/Library/Application Support/Sublime Text 3/Packages`. How to access this folder? In the finder, press `super+shift+g`, type the folder path in the box, and press `enter`.
+###Step 1, Download and unpack it
+ 
+Click the Preferences-> Browse Packages-> Then you will reach the folder `~/Library/Application Support/Sublime Text 3/Packages`. Download these files from here, and unpack it into this folder. 
 
 ###Step 2, To ensure that the do-files are opened in the Stata by default and hence are executed  directly, we need to make the following two changes.
 
@@ -133,6 +127,7 @@ Download these files from here, and unpack it into the folder: `~/Library/Applic
 Right click on any do-file under Finder > Open With > Select Stata from Applications folder > check "Always Open With" > Open.
 
 
+ 
  
 #Background information:
 1, This plugin is motivated by the article ["Some notes on text editors for Stata users"](http://fmwww.bc.edu/repec/bocode/t/textEditors.html#vim), and some part of the code is motivated and modified based on following packages, [stata package](github.com/docsteveharris), [StataEditor](github.com/mattiasnordin/), and [StataEnhanced](github.com/andrewheiss/
