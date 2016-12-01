@@ -26,8 +26,9 @@ Install the [Sublime Text 3 (ST3)](https://www.sublimetext.com/3). Open the ST3,
 ![demo](/pictures/tu1.gif)
 ### Matlab Style Execution for a Block
 Say, you have the following do-file:
+ 
+![ScreenShot](https://github.com/zizhongyan/StataImproved/pictures/tu2.png)
 
-![demo](/pictures/tu2)
 1) The "break line" can be simply inserted by `ctrl+s`.
 
 2) Put the cursor within a block, click  `ctrl+shift+d` to execute this block.
