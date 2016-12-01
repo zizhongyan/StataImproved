@@ -17,7 +17,7 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 
 ## Installations 
 
-Install the [Sublime Text 3 (ST3)](https://www.sublimetext.com/3). Open the ST3, Click the Preferences-> Browse Packages-> Then you will reach the folder `~/Library/Application Support/Sublime Text 3/Packages`. Download these files from this webpage by click the green buttum (Clone and download, Download zip), and unpack the zip file into that folder. 
+Install the [Sublime Text 3 (ST3)](https://www.sublimetext.com/3). Open the ST3, Click the Preferences-> Browse Packages-> Then you will reach the folder `~/Library/Application Support/Sublime Text 3/Packages`. Download these files from this webpage by click the green button above (Clone and download, Download zip), and unpack the zip file into that folder. 
 
 ## Usage 
 ### DEMO (YouTube)
