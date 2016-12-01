@@ -2,7 +2,7 @@
 
 The Sublime Text 3 (ST3) is probably the most popular text editor under the macOS platform. This plugin (beta) is committed to making the ST3 to be the favourable Stata do-file editor for Mac users.  
 
-(Last edited on 25th Nov 2016 by [Z Yan](mailto:helloyzz@gmail.com) and [C Wang](mailto:flora7819@gmail.com) )
+(Last edited on 1st Dec 2016 by [Z Yan](mailto:helloyzz@gmail.com) and [C Wang](mailto:flora7819@gmail.com). Comments are welcome. )
 
 ## Main Features
 #### 1, Execute the selected do-file 
@@ -13,9 +13,11 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 #### 6, Select any **word**, press `cmd+4`, it will become **${word}**. 
 #### 7, Select any command, press `F1` to see its help file. 
 #### 8, Select any variable(s), press `F2` to see the data browser. 
-#### 9, Improved Stata Syntax-highlighting  
+#### 9, Stata Syntax-highlighting  
 
+## Installations 
 
+Install the [Sublime Text 3 (ST3)](https://www.sublimetext.com/3). Open the ST3, Click the Preferences-> Browse Packages-> Then you will reach the folder `~/Library/Application Support/Sublime Text 3/Packages`. Download these files from this webpage by click the green buttum (Clone and download, Download zip), and unpack the zip file into that folder. 
 
 ## Usage 
 ### DEMO (YouTube)
@@ -26,13 +28,13 @@ https://www.youtube.com/watch?v=4vvsk8lG6fY&t=389s
 ### Matlab Style Execution for a Block
 Say, you have the following do-file:
  
-    /* -Piu_Sign- (Code Break Line) - (by Stata Editor for macOS (github) )  */
+    /* ------- break line ------- (by the Stata editor for macOS (piu_sign) )  */
     
     use http://www.stata-press.com/data/r13/nlswork, clear
-    merge 1: m price using auto.dta 
+    reg race age year birth_yr
     return list
     
-    /* -Piu_Sign- (Code Break Line) - (by Stata Editor for macOS (github) )  */
+    /* ------- break line ------- (by the Stata editor for macOS (piu_sign) )  */
     
     sysuse auto, clear
     reg price  weight
@@ -40,7 +42,7 @@ Say, you have the following do-file:
     ereturn list
     mat b = e(b)
     
-    /* -Piu_Sign- (Code Break Line) - (by Stata Editor for macOS (github) )  */
+    /* ------- break line ------- (by the Stata editor for macOS (piu_sign) )  */
 1) The "break line" can be simply inserted by `ctrl+s`.
 
 2) Put the cursor within a block, click  `ctrl+shift+d` to execute this block.
@@ -113,37 +115,21 @@ Select any word, press `cmd+4` to make it as ${word}.
 ### Data Browser
 Select any variable(s), press `F2` to see the data browser.
 
-#Installations
 
-###Step 1, Download and unpack it
  
-Click the Preferences-> Browse Packages-> Then you will reach the folder `~/Library/Application Support/Sublime Text 3/Packages`. Download these files from here, and unpack it into this folder. 
-
-###Step 2, To ensure that the do-files are opened in the Stata by default and hence are executed  directly, we need to make the following two changes.
-
-2.1. Uncheck the "Edit do-files opened from the Finder in Do-file Editor" in Preference>General Preference>Windows>Do-file Editor>Advanced (Stata 13/14), or Preferences > Do-file Editor > Advanced (Stata 12).
-
-2.2. Ensure the do-files are opened in the Stata by default. If it is not, please:
-Right click on any do-file under Finder > Open With > Select Stata from Applications folder > check "Always Open With" > Open.
 
 
  
  
 #Background information:
-1, This plugin is motivated by the article ["Some notes on text editors for Stata users"](http://fmwww.bc.edu/repec/bocode/t/textEditors.html#vim), and some part of the code is motivated and modified based on following packages, [stata package](github.com/docsteveharris), [StataEditor](github.com/mattiasnordin/), and [StataEnhanced](github.com/andrewheiss/
+1, This plugin is motivated by the article ["Some notes on text editors for Stata users"](http://fmwww.bc.edu/repec/bocode/t/textEditors.html#vim) By Nicolas J. Cox, and some part of the code is motivated and modified based on following packages: [StataEditor](https://github.com/mattiasnordin/) for the auto-completion, and [StataEnhanced by Andrew Heiss] (https://github.com/andrewheiss/) for the AppleScript.
 ).
 
-This plugin basically creates a temporary do-file, which is then sent to the Stata to execute.
-The Stata13+ has introduced the AppleScript commands (i.e. DoCommand and DoCommandAsync) which allows script commands to directly enter the Stata without creating any temporary file. If you would use the AppleScript style plugin for Mac, you might use the StataEnhanced package by [Andrew Heiss](https://github.com/andrewheiss/SublimeStataEnhanced/)
-However, we did not consider this option for two reasons:
- 		   
-i) AppleScript commands will go through all selected commands anyways even if the Stata has already reported an error message. This behaves quite differently from the Stata in-built do-file editor and could probably cause mistakes.
- 		
-ii) AppleScript commands sometimes do not work properly based on our own experience and tests, though we have not figured out the reason so far. Therefore we believe that creating a temporary do-file would be safer and more reliable and it behaves exactly the same as what the in-built do-file editor does. The temp file is harmless since it has just been temporarily saved in a cache folders in the macOS.
- 
-2, This package is the Mac only. For Windows users, please follow the instructions in the webpage above.
+This plugin basically creates a temporary do-file, which is then sent to the Stata to execute. All temporary cache files will be removed shortly when you close the Stata session.
 
-3, Some auto-completion code are based on StataEditor package (Version 0.7.0) by [Mattias Nordin](https://github.com/mattiasnordin/StataEditor), which works under the Windows platform.
+
+2, This package is the Mac only. For Windows users, please follow the instructions in the Nicolas J. Cox's webpage above.
+ 
         
-4, This plugin has been tested on Mac OS X Yosemite, El Capitan and macOS, and supports Stata 12-14SE/MP/IC. (It should also work well with Stata 11, but has not been formally tested).
+3, This plugin has been tested on Mac OS X Yosemite, El Capitan and macOS, and supports Stata 13 and 14 SE/MP/IC.
  
