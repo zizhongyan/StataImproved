@@ -20,14 +20,13 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 Install the [Sublime Text 3 (ST3)](https://www.sublimetext.com/3). Open the ST3, Click the Preferences-> Browse Packages-> Then you will reach the folder `~/Library/Application Support/Sublime Text 3/Packages`. Download these files from this webpage by click the green button above (Clone and download, Download zip), and unpack the zip file into that folder. 
 
 ## Usage 
-### DEMO (YouTube)
-https://www.youtube.com/watch?v=4vvsk8lG6fY&t=389s
-
 ### Code Execution
 `ctrl+d` -- Execute selected codes. if no code is selected, execute the current line. 
+
 ![demo](/pictures/tu1.gif)
 ### Matlab Style Execution for a Block
 Say, you have the following do-file:
+
 ![demo](/pictures/tu2)
 1) The "break line" can be simply inserted by `ctrl+s`.
 
@@ -35,12 +34,15 @@ Say, you have the following do-file:
 
 ### Automated Section Header, Comments toggle, and To Do List.
 Type `comm-h`, you will have a section header:
+
 ![demo](/pictures/tu4.gif)
 
 Type `comm-l`, you will insert a line of comments:
+
 ![demo](/pictures/tu3.gif)
 
 Type `comm-t`, you will insert to do list:
+
 ![demo](/pictures/tu5.gif)
 
 
@@ -48,12 +50,14 @@ Remember to press `tab` to fill up these templates!!!
 
 ### Automated For loops
 Type `for...`, you will trigger a auto-completed for loop template, such as:
+
 ![demo](/pictures/tu6.gif)
 
 Remember to press `tab` to fill up this template.
 
 ### Automated program
 Type `prog...`, you will trigger:
+
 ![demo](/pictures/tu7.gif)
 
 Press `tab` define the name of the program.
@@ -63,6 +67,7 @@ Press `tab` define the name of the program.
 
 ### Command auto-completion
 There are a few auto-completions. For instance, when type `merge`, you will trigger
+
 ![demo](/pictures/tu8.gif)
 
 Again, press `tab` to fill up this template.
@@ -70,6 +75,7 @@ Again, press `tab` to fill up this template.
 ### Macros
 Select any word, press \` to make it as \`word'. 
 Select any word, press `cmd+4` to make it as ${word}. 
+
 ![demo](/pictures/tu9.gif)
 
 ### Help File 
@@ -78,6 +84,8 @@ Select any word, press `cmd+4` to make it as ${word}.
 ### Data Browser
 Select any variable(s), press `F2` to see the data browser.
 
+### DEMO (YouTube)
+https://www.youtube.com/watch?v=4vvsk8lG6fY&t=389s
 
 ## Multiple Instances of Stata
 If you openned multiple instances of Stata, please note that this plugin will send the code to your MOST RECENTLY OPENNED Stata session. 
