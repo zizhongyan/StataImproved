@@ -25,73 +25,36 @@ https://www.youtube.com/watch?v=4vvsk8lG6fY&t=389s
 
 ### Code Execution
 `ctrl+d` -- Execute selected codes. if no code is selected, execute the current line. 
+![demo](/pictures/tu1.gif)
 ### Matlab Style Execution for a Block
 Say, you have the following do-file:
- 
-    /* ------- break line ------- (by the Stata editor for macOS (piu_sign) )  */
-    
-    use http://www.stata-press.com/data/r13/nlswork, clear
-    reg race age year birth_yr
-    return list
-    
-    /* ------- break line ------- (by the Stata editor for macOS (piu_sign) )  */
-    
-    sysuse auto, clear
-    reg price  weight
-    display _b[weight]
-    ereturn list
-    mat b = e(b)
-    
-    /* ------- break line ------- (by the Stata editor for macOS (piu_sign) )  */
+![demo](/pictures/tu2)
 1) The "break line" can be simply inserted by `ctrl+s`.
 
 2) Put the cursor within a block, click  `ctrl+shift+d` to execute this block.
 
 ### Automated Section Header, Comments toggle, and To Do List.
 Type `comm-h`, you will have a section header:
-
-    *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-    /*  Section: title        
-        Notes: */
-    *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-    Content  
-    
-    
-    
-    *-*-*-*-*-*-*-* End of the Section title *-*-*-*-*-*-*-*-*-*-*
+![demo](/pictures/tu4.gif)
 
 Type `comm-l`, you will insert a line of comments:
-
-    /* [> insert here <] */ 
+![demo](/pictures/tu3.gif)
 
 Type `comm-t`, you will insert to do list:
-
-    /*------------------------- 
-    To Do:
-       1.first  
-       2.second  
-    -------------------------*/ 
+![demo](/pictures/tu5.gif)
 
 
-
-Remember to press `tab` to fill up these template!!!
+Remember to press `tab` to fill up these templates!!!
 
 ### Automated For loops
 Type `for...`, you will trigger a auto-completed for loop template, such as:
-
-    forvalues j = 1 (1) n {
-    	$0
-    }  // end of forvalues j = 1 (1) n
+![demo](/pictures/tu6.gif)
 
 Remember to press `tab` to fill up this template.
 
 ### Automated program
 Type `prog...`, you will trigger:
-
-    capture program drop Name
-    program define Name
-        $0
-    end // end of program Name
+![demo](/pictures/tu7.gif)
 
 Press `tab` define the name of the program.
 
@@ -100,14 +63,14 @@ Press `tab` define the name of the program.
 
 ### Command auto-completion
 There are a few auto-completions. For instance, when type `merge`, you will trigger
-
-    merge  1:?  variables? using "?.dta
+![demo](/pictures/tu8.gif)
 
 Again, press `tab` to fill up this template.
 
 ### Macros
 Select any word, press \` to make it as \`word'. 
 Select any word, press `cmd+4` to make it as ${word}. 
+![demo](/pictures/tu9.gif)
 
 ### Help File 
  Select any command, press `F1` to see the help file. 
