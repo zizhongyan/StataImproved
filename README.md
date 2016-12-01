@@ -1,4 +1,4 @@
-# Improved Stata Editor for macOS : a sublime text 3 plugin
+# Improved Stata Editor for macOS : using sublime text 3
 
 The Sublime Text 3 (ST3) is probably the most popular text editor under the macOS platform. This plugin (beta) is committed to making the ST3 to be the favourable Stata do-file editor for Mac users.  
 
@@ -24,7 +24,7 @@ Install the [Sublime Text 3 (ST3)](https://www.sublimetext.com/3). Open the ST3,
 https://www.youtube.com/watch?v=4vvsk8lG6fY&t=389s
 
 ### Code Execution
-`ctrl+d` -- Execute selected codes. if no code is selected, execute the current line.
+`ctrl+d` -- Execute selected codes. if no code is selected, execute the current line. 
 ### Matlab Style Execution for a Block
 Say, you have the following do-file:
  
@@ -116,7 +116,8 @@ Select any word, press `cmd+4` to make it as ${word}.
 Select any variable(s), press `F2` to see the data browser.
 
 
- 
+## Multiple Instances of Stata
+If you openned multiple instances of Stata, please note that this plugin will send the code to your MOST RECENTLY OPENNED Stata session. 
 
 
  
