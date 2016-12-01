@@ -15,16 +15,16 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 #### 8, Select any variable(s), press `F2` to see the data browser. 
 #### 9, Stata Syntax-highlighting  
 
-## Installations 
+## 💿 Installations 
 
 Install the [Sublime Text 3 (ST3)](https://www.sublimetext.com/3). Open the ST3, Click the Preferences-> Browse Packages-> Then you will reach the folder `~/Library/Application Support/Sublime Text 3/Packages`. Download these files from this webpage by click the green button above (Clone and download, Download zip), and unpack the zip file into that folder. 
 
-## Usage 
-### Code Execution
+## 🎷 Usage 
+### 🎷Code Execution
 `ctrl+d` -- Execute selected codes. if no code is selected, execute the current line. 
 
 ![demo](/pictures/tu1.gif)
-### Matlab Style Execution for a Block
+### 🎷Matlab Style Execution for a Block
 Say, you have the following do-file:
  
 ![ScreenShot](/pictures/tu2.png)
@@ -33,7 +33,7 @@ Say, you have the following do-file:
 
 2) Put the cursor within a block, click  `ctrl+shift+d` to execute this block.
 
-### Automated Section Header, Comments toggle, and To Do List.
+### 🎷Automated Section Header, Comments toggle, and To Do List.
 Type `comm-h`, you will have a section header:
 
 ![demo](/pictures/tu4.gif)
@@ -49,14 +49,14 @@ Type `comm-t`, you will insert to do list:
 
 Remember to press `tab` to fill up these templates!!!
 
-### Automated For loops
+### 🎷Automated For loops
 Type `for...`, you will trigger a auto-completed for loop template, such as:
 
 ![demo](/pictures/tu6.gif)
 
 Remember to press `tab` to fill up this template.
 
-### Automated program
+### 🎷Automated program
 Type `prog...`, you will trigger:
 
 ![demo](/pictures/tu7.gif)
@@ -66,26 +66,26 @@ Press `tab` define the name of the program.
 
 
 
-### Command auto-completion
+### 🎷Command auto-completion
 There are a few auto-completions. For instance, when type `merge`, you will trigger
 
 ![demo](/pictures/tu8.gif)
 
 Again, press `tab` to fill up this template.
 
-### Macros
+### 🎷Macros
 Select any word, press \` to make it as \`word'. 
 Select any word, press `cmd+4` to make it as ${word}. 
 
 ![demo](/pictures/tu9.gif)
 
-### Help File 
+### 🎷Help File 
  Select any command, press `F1` to see the help file. 
 
-### Data Browser
+### 🎷Data Browser
 Select any variable(s), press `F2` to see the data browser.
 
-### DEMO (YouTube)
+### 🎷DEMO (YouTube)
 https://www.youtube.com/watch?v=4vvsk8lG6fY&t=389s
 
 ## Multiple Instances of Stata
