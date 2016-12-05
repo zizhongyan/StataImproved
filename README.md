@@ -7,7 +7,7 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 ## 🏆 Main Features
 #### 1, Execute the selected do-file 
 #### 2, Split the do-file into cells, and execute a block of do-file (just like what you do in Matlab) !!
-#### 3, Automated Section Header, Comments toggle, and To Do List.
+#### 3, Automated way to write Comments toggle, create a Fancy Section Header, and a To Do List.
 #### 4, Auto-completion for i) common used commands, ii) for loops, iii) writing program.
 #### 5, Select any **word**, press \`, it will become **\`word'**. 
 #### 6, Select any **word**, press `cmd+4`, it will become **${word}**. 
