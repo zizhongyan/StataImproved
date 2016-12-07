@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[ /* [> ${1:insert} <] */ 
+	<content><![CDATA[/* [> ${1:insert} <] */ 
 ]]></content>
 	<tabTrigger>comm-l</tabTrigger>
 	<scope>source.stata</scope>scope>
