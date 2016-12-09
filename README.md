@@ -114,7 +114,7 @@ This plugin basically creates a temporary do-file, which is then sent to the Sta
 ## Liciense
 MIT License
 
-Copyright (c) 2016 Zizhong Yan
+Copyright (c) 2016 Zizhong Yan & Chuhong Wang
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
