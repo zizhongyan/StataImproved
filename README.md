@@ -10,7 +10,7 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 #### 3, Automated way to write Comments toggle, create a Fancy Section Header, and a To Do List.
 #### 4, Automatic template for i) writting common used commands, ii) for loops, iii) writing program.(We are updating/incorprating more templates/snippets for Stata commands.)
 #### 5, Select any **word**, press \`, it will become **\`word'**. 
-#### 6, Select any **word**, press `cmd+4`, it will become **${word}**. 
+#### 6, Select any **word**, press `$`, it will become **${word}**. 
 #### 7, Select any command, press `F1` to see its help file. 
 #### 8, Select any variable(s), press `F2` to see the data browser. 
 #### 9, Press `F5`, insert the current date and time in the code.
@@ -80,7 +80,7 @@ Again, press `tab` to fill up this template.
 
 ### 🎷Macros
 Select any word, press \` to make it as \`word'. 
-Select any word, press `cmd+4` to make it as ${word}. 
+Select any word, press `$` to make it as ${word}. 
 
 ![demo](/pictures/tu9.gif)
 
