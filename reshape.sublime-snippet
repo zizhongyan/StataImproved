@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[ 
+reshape ${1:long_or_wide}  ${2:variables}  , i(${3:id}) y(${4:year})
+]]></content>
+	<tabTrigger>reshape</tabTrigger>
+	<scope>source.stata</scope>scope>
+	<description>Reshape command</description>description
+</snippet>

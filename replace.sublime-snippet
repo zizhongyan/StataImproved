@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[ 
+replace ${1:XX} = ${2:XXX}  if ${3:conditions}
+]]></content>
+	<tabTrigger>replace</tabTrigger>
+	<scope>source.stata</scope>scope>
+	<description>Replace command</description>description
+</snippet>

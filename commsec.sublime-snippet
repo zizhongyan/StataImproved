@@ -2,14 +2,14 @@
 	<content><![CDATA[
 
 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-/*  Section: ${1:title}  			
-    ${2:Notes:} */
+/*  Section ${1:number}: ${2:title}  			
+    ${3:Notes:} */
 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-${3:Content}	
+${4:Content}	
 
 
 
-*-*-*-*-*-*-*-* End of the Section ${1:title} *-*-*-*-*-*-*-*-*-*-*
+*-*-*-*-*-*-*-* End of the Section ${1:number}: ${2:title} *-*-*-*-*-*-*-*-*-*-*
 
 ]]></content>
 	<tabTrigger>comm-s</tabTrigger>

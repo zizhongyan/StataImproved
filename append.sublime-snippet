@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[ 
+append using "${1:file}.dta"  
+]]></content>
+	<tabTrigger>append</tabTrigger>
+	<scope>source.stata</scope>scope>
+	<description>Append command</description>description
+</snippet>
