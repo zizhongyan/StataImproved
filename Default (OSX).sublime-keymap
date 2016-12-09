@@ -28,7 +28,7 @@
       { "key": "selector", "operator": "equal", "operand": "source.stata" }
     ]
   },
-  { "keys": ["super+4"], "command": "stata_macro", "context":
+  { "keys": ["$"], "command": "stata_macro", "context":
     [
       { "key": "selector", "operator": "equal", "operand": "source.stata" }
     ]
