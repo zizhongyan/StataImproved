@@ -2,18 +2,19 @@
 
 The Sublime Text 3 (ST3) is probably the most popular text editor under the macOS platform. This plugin (beta) is committed to making the ST3 to be the favourable Stata do-file editor for Mac users.  
 
-(Last edited on 1st Dec 2016 by [Z Yan](mailto:helloyzz@gmail.com) and [C Wang](mailto:flora7819@gmail.com). Comments are welcome. )
+(Last edited on 9th Dec 2016 by [Zizhong Yan](mailto:helloyzz@gmail.com) and [Chuhong Wang](mailto:flora7819@gmail.com). Comments are welcome. )
 
 ## 🏆 Main Features
 #### 1, Execute the selected do-file 
 #### 2, Split the do-file into cells, and execute a block of do-file (just like what you do in Matlab) !!
 #### 3, Automated way to write Comments toggle, create a Fancy Section Header, and a To Do List.
-#### 4, Auto-completion for i) common used commands, ii) for loops, iii) writing program.
+#### 4, Automatic template for i) writting common used commands, ii) for loops, iii) writing program.(We are updating/incorprating more templates/snippets for Stata commands.)
 #### 5, Select any **word**, press \`, it will become **\`word'**. 
 #### 6, Select any **word**, press `cmd+4`, it will become **${word}**. 
 #### 7, Select any command, press `F1` to see its help file. 
 #### 8, Select any variable(s), press `F2` to see the data browser. 
-#### 9, Stata Syntax-highlighting  
+#### 9, Press `F5`, insert the current date and time in the code.
+#### 10, Stata Syntax-highlighting  
 
 ## 💿 Installations 
 
@@ -69,7 +70,9 @@ Press `tab` define the name of the program.
 
 
 ### 🎷Command auto-completion
-There are a few auto-completions. For instance, when type `merge`, you will trigger
+We are updating/incorprating more templates/snippets for Stata commands.
+
+Current, there are a few auto-completions. For instance, when type `merge`, you will trigger
 
 ![demo](/pictures/tu8.gif)
 
