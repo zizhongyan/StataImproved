@@ -48,5 +48,6 @@
       { "key": "selector", "operator": "equal", "operand": "source.stata", "match_all": true }
     ]
   }, 
-  { "keys": ["f5"], "command": "insert_datetime"}
+  { "keys": ["f5"], "command": "insert_datetime"},
+  { "keys": ["ctrl+="], "command": "reindent", "args": {"single_line": false}}
 ]  
