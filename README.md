@@ -11,10 +11,11 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 #### 4, Automatic template for i) writting common used commands, ii) for loops, iii) writing program.(We are updating/incorprating more templates/snippets for Stata commands.)
 #### 5, Select any **word**, press \`, it will become **\`word'**. 
 #### 6, Select any **word**, press `$`, it will become **${word}**. 
-#### 7, Select any command, press `F1` to see its help file. 
-#### 8, Select any variable(s), press `F2` to see the data browser. 
-#### 9, Press `F5`, insert the current date and time in the code.
-#### 10, Stata Syntax-highlighting  
+#### 7, Select any **word**, press `cmd+/`, it will become **/* word */**. 
+#### 8, Select any command, press `F1` to see its help file. 
+#### 9, Select any variable(s), press `F2` to see the data browser. 
+#### 10, Press `F5`, insert the current date and time in the code.
+#### 11, Stata Syntax-highlighting  
 
 ## 💿 Installations 
 
@@ -83,6 +84,11 @@ Select any word, press \` to make it as \`word'.
 Select any word, press `$` to make it as ${word}. 
 
 ![demo](/pictures/tu9.gif)
+
+### 🎷Toggle comments
+Select any word, press `cmd+/`  
+
+![demo](/pictures/tu10.gif)
 
 ### 🎷Help File 
  Select any command, press `F1` to see the help file. 
