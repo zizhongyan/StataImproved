@@ -1,7 +1,0 @@
-----------------
-Sublime Stata 
-----------------
-
-This is a pre-release version.
-
-It contains many improved function. Please see the github webpage of this plugin for the detail.
