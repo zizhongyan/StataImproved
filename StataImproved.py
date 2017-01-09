@@ -29,6 +29,17 @@ class StataMacro(sublime_plugin.TextCommand):
 			word_str = self.view.substr(word_sel)
 			word_str = "${"+word_str+"}"
 			self.view.replace(edit,word_sel,word_str)
+class StataToggle(sublime_plugin.TextCommand):
+	def run(self,edit):
+		sels = self.view.sel()
+		for sel in sels:
+			if len(sel) == 0:
+				word_sel = self.view.word(sel.a)
+			else:
+				word_sel = sel
+			word_str = self.view.substr(word_sel)
+			word_str = "/* "+word_str+" */"
+			self.view.replace(edit,word_sel,word_str)
 def get_stata_version():   # get_stata_version is modefied based on the Stata Enhanced - https://github.com/andrewheiss/SublimeStataEnhanced/
     cmd = """osascript<< END
                 try
