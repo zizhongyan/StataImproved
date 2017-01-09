@@ -17,9 +17,11 @@
   {
     "keys": ["ctrl+shift+d"], "command": "piu_sign"
   },
-    {
-    "keys": ["ctrl+alt+shift+d"], "command": "moab_server"
-  },
+  { "keys": ["super+/"], "command": "stata_toggle", "context":
+    [
+      { "key": "selector", "operator": "equal", "operand": "source.stata" }
+    ]
+  }, 
   {
   	"keys": ["ctrl+s"], "command": "insert", "args": {"characters": "\n/*  ------- break line ------- (by the Stata editor for macOS (piu_sign) )  */ \n"}
   },
