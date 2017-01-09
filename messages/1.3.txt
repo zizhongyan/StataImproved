@@ -1,8 +1,0 @@
-----------------
-Sublime Stata  
-----------------
-Updated:
-1. Code Break Line (Piu sign) re-designed
-
- 
-2. Automatically find the Stata and its version using code modified based on the Stata Enhanced package -- https://github.com/andrewheiss/SublimeStataEnhanced/
