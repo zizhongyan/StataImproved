@@ -1,5 +1,0 @@
-----------------
-Sublime Stata 13
-----------------
-This plugin is for the macOS system only. It may work under any Unix-like platform, however, I have not tested on these systems.
- 
