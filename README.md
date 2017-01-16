@@ -18,29 +18,34 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 #### 11, Stata Syntax-highlighting  
 
 ## 💿 Installations 
-Install the [Sublime Text 3 (ST3)](https://www.sublimetext.com/3)
 
-#### Installation via packge control. (easiest and recommended)
+
+### Installation via packge control. (easiest and recommended🏅)
 This package has been accepted by the [Sublime Text package manager](https://packagecontrol.io).  
-From the main application menu, navigate to:
-	• Tools -> Command Palette... -> type "Package Control: Install Package", select it ->, type the word `Stata Improved Editor` and select it to complete installation.
- 
-If you could not find the package control in your ST3, you will need to install it in advance. To install it, please go to [this webpage](https://packagecontrol.io/installation).
 
-#### Manual installation
-Open the ST3, click the Preferences-> Browse Packages-> Then you will reach the folder `~/Library/Application Support/Sublime Text 3/Packages`. Download [this Stata plugin from here](https://github.com/zizhongyan/StataImproved/archive/master.zip), and unpack the zip fil into that folder, and rename it as "StataImproved". 
+Install the [Sublime Text 3 (ST3)](https://www.sublimetext.com/3). Open the ST3, from the main application menu, navigate to: 
+
+Tools -> Command Palette... -> type "Package Control: Install Package", select it ->, type the word `Stata Improved Editor` and select it to complete installation.
+ 
+If you could not find the package control in your ST3, you will need to install it in advance. To install it, please go to [this webpage](https://packagecontrol.io/installation). 
 
 Note that though the trial version of the ST3 is untimed and unlimited, the license need be purchased. 
+
+### Manual installation
+Open the ST3, click the Preferences-> Browse Packages-> Then you will reach the folder `~/Library/Application Support/Sublime Text 3/Packages`. Download [this Stata plugin from here](https://github.com/zizhongyan/StataImproved/archive/master.zip), and unpack the zip fil into that folder, and rename it as "StataImproved". 
+
+### How to install the 
+
 
 ## 🎷 Usage 
 ### 🎷Code Execution
 `ctrl+d` -- Execute selected codes. if no code is selected, execute the current line. 
 
-![demo](/pictures/tu1.gif)
+![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/pictures/tu1.gif)
 ### 🎷Matlab Style Execution for a Block
 Say, you have the following do-file:
  
-![ScreenShot](/pictures/tu2.png)
+![ScreenShot](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/pictures/tu2.png)
 
 1) The "break line" can be simply inserted by `ctrl+s`.
 
@@ -49,15 +54,15 @@ Say, you have the following do-file:
 ### 🎷Automated Section Header, Comments toggle, and To Do List.
 Type `comm-h`, you will have a section header:
 
-![demo](/pictures/tu4.gif)
+![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/pictures/tu4.gif)
 
 Type `comm-l`, you will insert a line of comments:
 
-![demo](/pictures/tu3.gif)
+![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/pictures/tu3.gif)
 
 Type `comm-t`, you will insert to do list:
 
-![demo](/pictures/tu5.gif)
+![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/pictures/tu5.gif)
 
 
 Remember to press `tab` to fill up these templates!!!
@@ -65,14 +70,14 @@ Remember to press `tab` to fill up these templates!!!
 ### 🎷Automated For loops
 Type `for...`, you will trigger a auto-completed for loop template, such as:
 
-![demo](/pictures/tu6.gif)
+![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/pictures/tu6.gif)
 
 Remember to press `tab` to fill up this template.
 
 ### 🎷Automated program
 Type `prog...`, you will trigger:
 
-![demo](/pictures/tu7.gif)
+![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/pictures/tu7.gif)
 
 Press `tab` define the name of the program.
 
@@ -84,7 +89,7 @@ We are updating/incorprating more templates/snippets for Stata commands.
 
 Current, there are a few auto-completions. For instance, when type `merge`, you will trigger
 
-![demo](/pictures/tu8.gif)
+![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/pictures/tu8.gif)
 
 Again, press `tab` to fill up this template.
 
@@ -92,12 +97,12 @@ Again, press `tab` to fill up this template.
 Select any word, press \` to make it as \`word'. 
 Select any word, press `$` to make it as ${word}. 
 
-![demo](/pictures/tu9.gif)
+![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/pictures/tu9.gif)
 
 ### 🎷Toggle comments
 Select any word, press `cmd+/`  
 
-![demo](/pictures/tu10.gif)
+![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/pictures/tu10.gif)
 
 
 ### 🎷Help File 
