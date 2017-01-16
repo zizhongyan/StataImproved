@@ -22,7 +22,7 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 Firstly you need to install the [Sublime Text 3 (ST3)](https://www.sublimetext.com/3).
 
 ### Installation via packge control. (easiest and recommended🏅)
-The installation is very simple as his package has been accepted by the [Sublime Text package manager](https://packagecontrol.io). There are 3 steps:
+The installation is very simple as this package has been accepted by the [Sublime Text package manager](https://packagecontrol.io). There are 3 steps:
 
 * Open the ST3, from the main application menu, navigate to `Tools`, open the `Command Palette` (shortcut: <kbd>CMD</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd>)
 * Select `Package Control: Install Package`
@@ -36,7 +36,6 @@ Note that though the trial version of the ST3 is untimed and unlimited, the lice
 ### Manual installation
 Open the ST3, click the Preferences-> Browse Packages-> Then you will reach the folder `~/Library/Application Support/Sublime Text 3/Packages`. Download [this Stata plugin from here](https://github.com/zizhongyan/StataImproved/archive/master.zip), and unpack the zip fil into that folder, and rename it as "StataImproved". 
 
-### How to install the 
 
 
 ## 🎷 Usage 
