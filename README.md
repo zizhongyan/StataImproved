@@ -10,7 +10,7 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 #### 2, Split the do-file into cells, and execute a block of do-file (just like what you do in Matlab) !!
 #### 3, Automated way to write Comments toggle, create a Fancy Section Header, and a To Do List.
 #### 4, Automatic template for i) writting common used commands, ii) for loops, iii) writing program.(We are updating/incorprating more templates/snippets for Stata commands.)
-#### 5, Select any **word**, press <kbd>\`</kbd>, it will become **\`word'**. 
+#### 5, Select any **word**, press <kbd>\`</kbd>, it will become \`**word**'. 
 #### 6, Select any **word**, press <kbd>$</kbd>, it will become **${word}**. 
 #### 7, Select any **word**, press <kbd>cmd</kbd>+<kbd>/</kbd>, it will become **/* word */**. 
 #### 8, Select any command, press <kbd>F1</kbd> to see its help file. 
