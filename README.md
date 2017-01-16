@@ -10,12 +10,12 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 #### 2, Split the do-file into cells, and execute a block of do-file (just like what you do in Matlab) !!
 #### 3, Automated way to write Comments toggle, create a Fancy Section Header, and a To Do List.
 #### 4, Automatic template for i) writting common used commands, ii) for loops, iii) writing program.(We are updating/incorprating more templates/snippets for Stata commands.)
-#### 5, Select any **word**, press \`, it will become **\`word'**. 
-#### 6, Select any **word**, press `$`, it will become **${word}**. 
-#### 7, Select any **word**, press `cmd+/`, it will become **/* word */**. 
-#### 8, Select any command, press `F1` to see its help file. 
-#### 9, Select any variable(s), press `F2` to see the data browser. 
-#### 10, Press `F5`, insert the current date and time in the code.
+#### 5, Select any **word**, press <kbd>`</kbd>, it will become **\`word'**. 
+#### 6, Select any **word**, press <kbd>$</kbd>, it will become **${word}**. 
+#### 7, Select any **word**, press <kbd>cmd+/</kbd>, it will become **/* word */**. 
+#### 8, Select any command, press <kbd>F1</kbd> to see its help file. 
+#### 9, Select any variable(s), press <kbd>F2</kbd> to see the data browser. 
+#### 10, Press <kbd>F5</kbd>, insert the current date and time in the code.
 #### 11, Stata Syntax-highlighting  
 
 ## 💿 Installations 
@@ -24,7 +24,7 @@ Firstly you need to install the [Sublime Text 3 (ST3)](https://www.sublimetext.c
 ### Installation via packge control. (easiest and recommended🏅)
 The installation is very simple as his package has been accepted by the [Sublime Text package manager](https://packagecontrol.io). There are 3 steps:
 
-* Open the ST3, from the main application menu, navigate to `Tools`, open the `Command Palette` (shortcut: <kbd>CMD</kbd>+<kbd>MAJ</kbd>+<kbd>P</kbd>)
+* Open the ST3, from the main application menu, navigate to `Tools`, open the `Command Palette` (shortcut: <kbd>CMD</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd>)
 * Select `Package Control: Install Package`
 * Search `Stata Improved Editor` and hit <kbd>Enter</kbd> to complete installation.
 
@@ -41,7 +41,7 @@ Open the ST3, click the Preferences-> Browse Packages-> Then you will reach the 
 
 ## 🎷 Usage 
 ### 🎷Code Execution
-`ctrl+d` -- Execute selected codes. if no code is selected, execute the current line. 
+<kbd>ctrl</kbd><kbd>d</kbd> -- Execute selected codes. if no code is selected, execute the current line. 
 
 ![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu1.gif)
 ### 🎷Matlab Style Execution for a Block
@@ -49,9 +49,9 @@ Say, you have the following do-file:
  
 ![ScreenShot](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu2.png)
 
-1) The "break line" can be simply inserted by `ctrl+s`.
+1) The "break line" can be simply inserted by <kbd>ctrl</kbd><kbd>d</kbd> .
 
-2) Put the cursor within a block, click  `ctrl+shift+d` to execute this block.
+2) Put the cursor within a block, click  <kbd>ctrl</kbd><kbd>shift</kbd><kbd>d</kbd>  to execute this block.
 
 ### 🎷Automated Section Header, Comments toggle, and To Do List.
 Type `comm-h`, you will have a section header:
@@ -67,21 +67,21 @@ Type `comm-t`, you will insert to do list:
 ![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu5.gif)
 
 
-Remember to press `tab` to fill up these templates!!!
+Remember to press <kbd>tab</kbd> to fill up these templates!!!
 
 ### 🎷Automated For loops
 Type `for...`, you will trigger a auto-completed for loop template, such as:
 
 ![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu6.gif)
 
-Remember to press `tab` to fill up this template.
+Remember to press <kbd>tab</kbd> to fill up this template.
 
 ### 🎷Automated program
 Type `prog...`, you will trigger:
 
 ![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu7.gif)
 
-Press `tab` define the name of the program.
+Press <kbd>tab</kbd> define the name of the program.
 
 
 
@@ -93,7 +93,7 @@ Current, there are a few auto-completions. For instance, when type `merge`, you 
 
 ![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu8.gif)
 
-Again, press `tab` to fill up this template.
+Again, press <kbd>tab</kbd> to fill up this template.
 
 ### 🎷Macros
 Select any word, press \` to make it as \`word'. 
@@ -102,16 +102,16 @@ Select any word, press `$` to make it as ${word}.
 ![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu9.gif)
 
 ### 🎷Toggle comments
-Select any word, press `cmd+/`  
+Select any word, press <kbd>cmd</kbd> +<kbd>/</kbd> 
 
 ![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu10.gif)
 
 
 ### 🎷Help File 
- Select any command, press `F1` to see the help file. 
+ Select any command, press <kbd>F1</kbd>  to see the help file. 
 
 ### 🎷Data Browser
-Select any variable(s), press `F2` to see the data browser.
+Select any variable(s), press <kbd>F2</kbd>  to see the data browser.
 
 ### 🎷DEMO (YouTube)
 https://www.youtube.com/watch?v=4vvsk8lG6fY&t=389s
