@@ -48,7 +48,7 @@ Say, you have the following do-file:
  
 ![ScreenShot](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu2.png)
 
-1) The "break line" can be simply inserted by <kbd>CTRL</kbd>+<kbd>d</kbd> .
+1) The "break line" can be simply inserted by <kbd>CTRL</kbd>+<kbd>s</kbd> .
 
 2) Put the cursor within a block, click  <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd>  to execute this block.
 
