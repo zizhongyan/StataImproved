@@ -118,7 +118,7 @@ https://www.youtube.com/watch?v=4vvsk8lG6fY&t=389s
 ## Multiple Instances of Stata
 If you openned multiple instances of Stata, please note that this plugin will send the code to your MOST RECENTLY OPENNED Stata session. 
 
-If you have different versions of Stata are installed in your Mac (e.g. both Stata 13 and Stata 14), the plugin will send code to the most updated version of Stata (i.e. Stata 14).
+If different versions of Stata are installed in your Mac (e.g. both Stata 13 and Stata 14), the plugin will send code to the most updated version of Stata (i.e. Stata 14).
 
 
  
