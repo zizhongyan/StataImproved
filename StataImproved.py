@@ -43,20 +43,20 @@ class StataToggle(sublime_plugin.TextCommand):
 def get_stata_version():   # get_stata_version is modefied based on the Stata Enhanced - https://github.com/andrewheiss/SublimeStataEnhanced/
     cmd = """osascript<< END
                 try
-                    tell me to get application id "com.stata.stata14"
-                    set stata to 14
-                end try
-                try
-                    tell me to get application id "com.stata.stata13"
-                    set stata to 13
+                    tell me to get application id "com.stata.stata11"
+                    set stata to 11
                 end try
                 try
                     tell me to get application id "com.stata.stata12"
                     set stata to 12
                 end try
                 try
-                    tell me to get application id "com.stata.stata11"
-                    set stata to 11
+                    tell me to get application id "com.stata.stata13"
+                    set stata to 13
+                end try
+		try
+                    tell me to get application id "com.stata.stata14"
+                    set stata to 14
                 end try
                 return stata
             END"""
