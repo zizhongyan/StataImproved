@@ -7,5 +7,5 @@ ${3:Content}
 ]]></content>
 	<tabTrigger>comm-tripleline</tabTrigger>
 	<scope>source.stata</scope>scope>
-	<description>Section Header</description>description
+	<description>One line comments - more asterisks</description>description
 </snippet>
