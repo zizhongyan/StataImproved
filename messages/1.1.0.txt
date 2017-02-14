@@ -1,6 +1,6 @@
 Updated following:
 
-1, Some users says the ctrl+d sometimes does not work properly. We fixed this in this update.
+1, Some users say the ctrl+d sometimes does not work properly. We fixed this in this update.
 
 2, Changed the comments toggle to /* ... */ style, which is compatible with Mata language.
 
