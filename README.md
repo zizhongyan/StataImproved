@@ -57,9 +57,11 @@ Say, you have the following do-file:
 2) Put the cursor within a block, click  <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd>  to execute this block.
 
 ### 🎷Automated Section Header, Comments toggle, and To Do List.
-Type `comm-h`, you will have a section header:
+Type `comm-s`, you will have a section header:
 
 <img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu4.gif" width="550">
+
+🏊 you might also try `comm-subsec` to trigger a sub-section header.
 
 Type `comm-l`, you will insert a line of comments:
 
