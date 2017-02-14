@@ -1,0 +1,4 @@
+Added a few new features required by users:
+
+1, Surround a local macro without selecting a word.
+2, comm-triple to trigger a 3 lines comments.
