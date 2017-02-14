@@ -45,12 +45,12 @@ Open the ST3, click the Preferences-> Browse Packages-> Then you will reach the 
 ### 🎷Code Execution
 <kbd>CTRL</kbd>+<kbd>d</kbd> -- Execute selected codes. if no code is selected, execute the current line. 
 
-<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu1.gif" width="650">
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu1.gif" width="680">
 
 ### 🎷Matlab Style Execution for a Block
 Say, you have the following do-file:
  
-<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu2.png" width="650">
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu2.png" width="680">
 
 1) The "break line" can be simply inserted by <kbd>CTRL</kbd>+<kbd>s</kbd> .
 
@@ -59,15 +59,15 @@ Say, you have the following do-file:
 ### 🎷Automated Section Header, Comments toggle, and To Do List.
 Type `comm-h`, you will have a section header:
 
-<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu4.gif" width="650">
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu4.gif" width="550">
 
 Type `comm-l`, you will insert a line of comments:
 
-<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu3.gif" width="650">
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu3.gif" width="550">
 
 Type `comm-t`, you will insert to do list:
 
-<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu5.gif" width="650">
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu5.gif" width="550">
 
 
 Remember to press <kbd>TAB</kbd> to fill up these templates!!!
@@ -75,14 +75,14 @@ Remember to press <kbd>TAB</kbd> to fill up these templates!!!
 ### 🎷Automated For loops
 Type `for...`, you will trigger a auto-completed for loop template, such as:
 
-![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu6.gif)
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu6.gif" width="550">
 
 Remember to press <kbd>TAB</kbd> to fill up this template.
 
 ### 🎷Automated program
 Type `prog...`, you will trigger:
 
-![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu7.gif)
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu7.gif" width="550">
 
 Press <kbd>TAB</kbd> define the name of the program.
 
@@ -94,7 +94,7 @@ We are updating/incorprating more templates/snippets for Stata commands.
 
 Current, there are a few auto-completions. For instance, when type `merge`, you will trigger
 
-![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu8.gif)
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu8.gif" width="550">
 
 Again, press <kbd>TAB</kbd> to fill up this template.
 
@@ -102,12 +102,12 @@ Again, press <kbd>TAB</kbd> to fill up this template.
 Select any word, press \` to make it as \`word'. 
 Select any word, press `$` to make it as ${word}. 
 
-![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu9.gif)
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu9.gif" width="550">
 
 ### 🎷Toggle comments
 Select any word, press <kbd>CMD</kbd> +<kbd>/</kbd> 
 
-![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu10.gif)
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu10.gif" width="550">
 
 
 ### 🎷Help File 
