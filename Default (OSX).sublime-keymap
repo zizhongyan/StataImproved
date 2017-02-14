@@ -1,18 +1,16 @@
 [
-  { "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/StataImproved/StataImproved-macro.sublime-macro"}, "context":
-      [
-        { "key": "selector", "operator": "equal", "operand": "source.stata" }
-      ]
-  }  , 
+  {
+    "keys": ["ctrl+d"], "command": "lines_to_stata"
+  },
   { "keys": ["f1"], "command": "stata_help", "context":
-  	[
-  		{ "key": "selector", "operator": "equal", "operand": "source.stata" }
-  	]
+    [
+      { "key": "selector", "operator": "equal", "operand": "source.stata" }
+    ]
   } ,
   { "keys": ["f2"], "command": "stata_bro", "context":
-  	[
-  		{ "key": "selector", "operator": "equal", "operand": "source.stata" }
-  	]
+    [
+      { "key": "selector", "operator": "equal", "operand": "source.stata" }
+    ]
   } ,
   {
     "keys": ["ctrl+shift+d"], "command": "piu_sign"
@@ -23,7 +21,7 @@
     ]
   }, 
   {
-  	"keys": ["ctrl+s"], "command": "insert", "args": {"characters": "\n/*  ------- break line ------- (by the Stata editor for macOS (piu_sign) )  */ \n"}
+    "keys": ["ctrl+s"], "command": "insert", "args": {"characters": "\n/*  ------- break line ------- (by the Stata editor for macOS (piu_sign) )  */ \n"}
   },
   { "keys": ["super+`"], "command": "stata_local", "context":
     [
