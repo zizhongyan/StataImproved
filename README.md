@@ -1,9 +1,10 @@
 # Improved Stata Editor for macOS : using sublime text 3
 
-The Sublime Text 3 (ST3) is probably the most popular text editor under the macOS platform. This plugin (v.1.0.0) is committed to making the ST3 to be the favourable and handy Stata do-file editor for Mac users.  
+The Sublime Text 3 (ST3) is probably the most popular text editor under the macOS platform. This plugin (v.1.1.0) is committed to making the ST3 to be the favourable and handy Stata do-file editor for Mac users.  
 
 * This package has been accepted by the [Sublime Text package manager](https://packagecontrol.io/packages/Stata%20Improved%20Editor) on 16th Jan 2017.
-* Last edited on 7th Feb 2017 by [Zizhong Yan](mailto:helloyzz@gmail.com) and [Chuhong Wang](mailto:flora7819@gmail.com). Comments are welcome. 
+* Last edited on 14th Feb 2017 by [Zizhong Yan](mailto:helloyzz@gmail.com) and [Chuhong Wang](mailto:flora7819@gmail.com). Comments are welcome. 
+## **** In this update v1.1.0, we fixed the ctrl+d problem ! **** ##
 
 ## 🏆 Main Features
 #### 1, Execute the selected do-file 
