@@ -6,7 +6,7 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 * Last edited on 14th Feb 2017 by [Zizhong Yan](mailto:helloyzz@gmail.com) and [Chuhong Wang](mailto:flora7819@gmail.com). Comments are welcome. 
 
 
-## **** 🎼 News 🎼 In this update v1.1.0, we fixed the ctrl+d problem for users installed via package control! 14/02/17 **** ##
+## 🎼 News 🎼 In this update v1.1.0, we fixed the ctrl+d problem for users installed via package control! 14/02/17 ##
 
 ## 🏆 Main Features
 #### 1, Execute the selected do-file 
@@ -101,11 +101,11 @@ Current, there are a few auto-completions. For instance, when type `merge`, you 
 Again, press <kbd>TAB</kbd> to fill up this template.
 
 ### 🎷Macros - Local and Global
-Select any word, press \` to make it as \`word'. 
+Select any word, press <kbd>\`</kbd> to make it as 'word'. 
 
 Select any word, press `$` to make it as ${word}. 
 
-🏊New: If you did not select any word but put the cursor in a word, then pressing `CMD+`\` can also make it as \`word'.
+🏊New: If you did not select any word but put the cursor in a word, then pressing `CMD+`<kbd>\`</kbd> can also make it as 'word'.
 
 <img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu9.gif" width="550">
 
