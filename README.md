@@ -4,6 +4,8 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 
 * This package has been accepted by the [Sublime Text package manager](https://packagecontrol.io/packages/Stata%20Improved%20Editor) on 16th Jan 2017.
 * Last edited on 14th Feb 2017 by [Zizhong Yan](mailto:helloyzz@gmail.com) and [Chuhong Wang](mailto:flora7819@gmail.com). Comments are welcome. 
+
+
 ## **** In this update v1.1.0, we fixed the ctrl+d problem ! **** ##
 
 ## 🏆 Main Features
