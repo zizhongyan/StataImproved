@@ -56,7 +56,7 @@ Say, you have the following do-file:
 
 2) Put the cursor within a block, click  <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd>  to execute this block.
 
-### 🎷Automated Section Header, Comments toggle, and To Do List.
+### 🎷Section Header, Comments toggle, and To Do List.
 Type `comm-s`, you will have a section header:
 
 <img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu4.gif" width="550">
@@ -74,14 +74,14 @@ Type `comm-t`, you will insert to do list:
 
 Remember to press <kbd>TAB</kbd> to fill up these templates!!!
 
-### 🎷Automated For loops
+### 🎷For loops template
 Type `for...`, you will trigger a auto-completed for loop template, such as:
 
 <img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu6.gif" width="550">
 
 Remember to press <kbd>TAB</kbd> to fill up this template.
 
-### 🎷Automated program
+### 🎷Write a program 
 Type `prog...`, you will trigger:
 
 <img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu7.gif" width="550">
@@ -91,7 +91,7 @@ Press <kbd>TAB</kbd> define the name of the program.
 
 
 
-### 🎷Command auto-completion
+### 🎷Commands auto-completion
 We are updating/incorprating more templates/snippets for Stata commands.
 
 Current, there are a few auto-completions. For instance, when type `merge`, you will trigger
@@ -100,9 +100,10 @@ Current, there are a few auto-completions. For instance, when type `merge`, you 
 
 Again, press <kbd>TAB</kbd> to fill up this template.
 
-### 🎷Macros
+### 🎷Macros - Local and Global
 Select any word, press \` to make it as \`word'. 
 Select any word, press `$` to make it as ${word}. 
+🏊New: If you did not select any word but put the cursor in a word, then pressing `CMD+`\` can also make it as \`word'.
 
 <img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu9.gif" width="550">
 
