@@ -6,7 +6,7 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 * Last edited on 14th Feb 2017 by [Zizhong Yan](mailto:helloyzz@gmail.com) and [Chuhong Wang](mailto:flora7819@gmail.com). Comments are welcome. 
 
 
-## **** In this update v1.1.0, we fixed the ctrl+d problem ! **** ##
+## **** Note: In this update v1.1.0, we fixed the ctrl+d problem ! 14/02/17 **** ##
 
 ## 🏆 Main Features
 #### 1, Execute the selected do-file 
@@ -141,7 +141,7 @@ This plugin basically creates a temporary do-file, which is then sent to the Sta
 ## Liciense
 MIT License
 
-Copyright (c) 2016 Zizhong Yan & Chuhong Wang
+Copyright (c) 2016-2017 Zizhong Yan & Chuhong Wang
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
