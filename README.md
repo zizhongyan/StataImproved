@@ -45,11 +45,12 @@ Open the ST3, click the Preferences-> Browse Packages-> Then you will reach the 
 ### 🎷Code Execution
 <kbd>CTRL</kbd>+<kbd>d</kbd> -- Execute selected codes. if no code is selected, execute the current line. 
 
-![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu1.gif)
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu1.gif" width="650">
+
 ### 🎷Matlab Style Execution for a Block
 Say, you have the following do-file:
  
-![ScreenShot](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu2.png)
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu2.png" width="650">
 
 1) The "break line" can be simply inserted by <kbd>CTRL</kbd>+<kbd>s</kbd> .
 
@@ -58,15 +59,15 @@ Say, you have the following do-file:
 ### 🎷Automated Section Header, Comments toggle, and To Do List.
 Type `comm-h`, you will have a section header:
 
-![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu4.gif)
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu4.gif" width="650">
 
 Type `comm-l`, you will insert a line of comments:
 
-![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu3.gif)
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu3.gif" width="650">
 
 Type `comm-t`, you will insert to do list:
 
-![demo](https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu5.gif)
+<img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu5.gif" width="650">
 
 
 Remember to press <kbd>TAB</kbd> to fill up these templates!!!
