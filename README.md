@@ -102,7 +102,9 @@ Again, press <kbd>TAB</kbd> to fill up this template.
 
 ### 🎷Macros - Local and Global
 Select any word, press \` to make it as \`word'. 
+
 Select any word, press `$` to make it as ${word}. 
+
 🏊New: If you did not select any word but put the cursor in a word, then pressing `CMD+`\` can also make it as \`word'.
 
 <img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu9.gif" width="550">
