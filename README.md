@@ -144,7 +144,7 @@ This plugin basically creates a temporary do-file, which is then sent to the Sta
         
 3, This plugin has been tested on Mac OS X Yosemite, El Capitan and macOS, and supports Stata 13 and 14 SE/MP/IC.
  
-## Liciense
+## License
 MIT License
 
 Copyright (c) 2016-2017 Zizhong Yan & Chuhong Wang
