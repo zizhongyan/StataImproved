@@ -3,10 +3,13 @@
 The Sublime Text 3 (ST3) is probably the most popular text editor under the macOS platform. This plugin (v.1.1.0) is committed to making the ST3 to be the favourable and handy Stata do-file editor for Mac users.  
 
 * This package has been accepted by the [Sublime Text package manager](https://packagecontrol.io/packages/Stata%20Improved%20Editor) on 16th Jan 2017.
-* Last edited on 14th Feb 2017 by [Zizhong Yan](mailto:helloyzz@gmail.com) and [Chuhong Wang](mailto:flora7819@gmail.com). Comments are welcome. 
+* Last edited on 8th June 2017 by [Zizhong Yan](mailto:helloyzz@gmail.com) and [Chuhong Wang](mailto:flora7819@gmail.com). Comments are welcome. 
 
 
-## 🎼 News 🎼 In this update v1.1.0, we fixed the ctrl+d problem for users installed via package control! 14/02/17 ##
+## 🎼 News 🎼 
+In update v1.1.2 (08/06/17 ), the shortcut <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd> can also be used to execute the WHOLE do-file if no Matlab-style code blocks are defined. Many thanks for [acarril](https://github.com/acarril)'s suggestion on this! 
+In update v1.1.0 (14/02/17 ), we fixed the ctrl+d problem for users installed via package control! 
+
 
 ## 🏆 Main Features
 #### 1, Execute the selected do-file 
@@ -55,6 +58,9 @@ Say, you have the following do-file:
 1) The "break line" can be simply inserted by <kbd>CTRL</kbd>+<kbd>s</kbd> .
 
 2) Put the cursor within a block, click  <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd>  to execute this block.
+
+### 🎷Run the whole do-file (NEW)
+If there is no code blocks are defined by the aforementioned "break line", clicking <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd> could execute the whole script.
 
 ### 🎷Section Header, Comments toggle, and To Do List.
 Type `comm-s`, you will have a section header:
