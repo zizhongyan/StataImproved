@@ -88,13 +88,13 @@ class PiuSign(sublime_plugin.TextCommand):
 				self.view.sel().subtract(sel)
 				self.view.sel().add(sublime.Region(start-64, end+15))
 			replace_region(touse2, touse3+1) 
-		print(self.view.sel()) 
 		selectedcode = ""
-		sels = self.view.sel()
-		for sel in sels:
-			selectedcode = selectedcode + self.view.substr(sel)
-		if len(selectedcode) == 0:
-			selectedcode = self.view.substr(self.view.line(sel)) 
+		if len(getme)==0:  
+			selectedcode = self.view.substr(sublime.Region(0, self.view.size()))
+		if len(getme)!=0: 
+			sels = self.view.sel()
+			for sel in sels:
+				selectedcode = selectedcode + self.view.substr(sel) 
 		selectedcode = selectedcode + "\n"   
 		dofile_path = os.path.join(os.path.dirname(self.view.file_name()), 'from_sublime.do')
 		dofile_path =tempfile.gettempdir()+'BLOCK_piupiu.do'
