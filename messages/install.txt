@@ -4,4 +4,4 @@ Improved Stata Editor for mac users
 
 Project homepage: https://github.com/zizhongyan/StataImproved
 
-Author: Zizhong Yan and Chuhong Wang
+Authors: Zizhong Yan and Chuhong Wang
