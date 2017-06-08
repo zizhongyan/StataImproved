@@ -8,6 +8,7 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 
 ## 🎼 News 🎼 
 In update v1.1.2 (08/06/17 ), the shortcut <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd> can also be used to execute the WHOLE do-file if no Matlab-style code blocks are defined. Many thanks for [acarril](https://github.com/acarril)'s suggestion on this! 
+
 In update v1.1.0 (14/02/17 ), we fixed the ctrl+d problem for users installed via package control! 
 
 
