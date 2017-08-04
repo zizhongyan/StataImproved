@@ -1,15 +1,16 @@
 # Improved Stata Editor for macOS : using sublime text 3
 
-The Sublime Text 3 (ST3) is probably the most popular text editor under the macOS platform. This plugin (v.1.1.0) is committed to making the ST3 to be the favourable and handy Stata do-file editor for Mac users.  
+The Sublime Text 3 (ST3) is probably the most popular text editor under the macOS platform. This plugin (v.1.3.0) is committed to making the ST3 to be the favourable and handy Stata do-file editor for Mac users.  
 
 * This package has been accepted by the [Sublime Text package manager](https://packagecontrol.io/packages/Stata%20Improved%20Editor) on 16th Jan 2017.
 * Last edited on 8th June 2017 by [Zizhong Yan](mailto:helloyzz@gmail.com) and [Chuhong Wang](mailto:flora7819@gmail.com). Comments are welcome. 
 
 
 ## 🎼 News 🎼 
-In update v1.1.2 (08/06/17 ), the shortcut <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd> can also be used to execute the WHOLE do-file if no Matlab-style code blocks are defined. Many thanks for [acarril](https://github.com/acarril)'s suggestion on this! 
+v1.3.0 (04/Aug/17): Support for Stata 13, 14 and 15 SE/MP/IC. See below section of "Multiple Instances of Stata" for details.
+v1.1.2 (08/Jun/17): The shortcut <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd> can also be used to execute the WHOLE do-file if no Matlab-style code blocks are defined. Many thanks for [Alvaro Carril](http://alvarocarril.com/)'s suggestion on this! 
 
-In update v1.1.0 (14/02/17 ), we fixed the ctrl+d problem for users installed via package control! 
+v1.1.0 (14/Jun/17): We fixed the ctrl+d problem for users installed via package control! 
 
 
 ## 🏆 Main Features
@@ -134,7 +135,7 @@ https://www.youtube.com/watch?v=4vvsk8lG6fY&t=389s
 ## Multiple Instances of Stata
 If you openned multiple instances of Stata, please note that this plugin will send the code to your MOST RECENTLY OPENNED Stata session. 
 
-If different versions of Stata are installed in your Mac (e.g. both Stata 13 and Stata 14), the plugin will send code to the most updated version of Stata (i.e. Stata 14).
+If different versions of Stata are installed in your Mac (e.g. both Stata 14 and Stata 15), the plugin will send code to the most updated version of Stata (i.e. Stata 15). 
 
 
  
@@ -149,7 +150,7 @@ This plugin basically creates a temporary do-file, which is then sent to the Sta
 2, This package is the Mac only. For Windows users, please follow the instructions in the Nicolas J. Cox's webpage above.
  
         
-3, This plugin has been tested on Mac OS X Yosemite, El Capitan and macOS, and supports Stata 13 and 14 SE/MP/IC.
+3, This plugin has been tested on Mac OS X Yosemite, El Capitan and macOS, and supports Stata 13, 14 and 15 SE/MP/IC.
  
 ## License
 MIT License
