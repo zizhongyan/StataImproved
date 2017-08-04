@@ -19,7 +19,7 @@
         <array>
                 <dict>
                         <key>match</key>
-                        <string>\b(if|in|for|by|bys|xi|quietly|capture|exit|qui|cap|program|end|piu_sign|function|void|noi|nois|noisi|noisil|noisily|mata|forv|forva|forval|forvalu|forvalue|forvalues|foreach)\b</string>
+                        <string>\b(if|in|for|by|bys|xi|quietly|capture|exit|qui|cap|program|end|piu_sign|function|void|noi|nois|noisi|noisil|noisily|mata|forv|forva|forval|forvalu|forvalue|forvalues|foreach|dd_version|dd_display|dd_do|dd_display|dd_ignore)\b</string>
                         <key>name</key>
                         <string>keyword.control.stata</string>
                 </dict>
@@ -135,6 +135,21 @@
            		                </dict>
            		        </array>        
            		</dict>
+                <dict>
+                        <key>begin</key>
+                        <string>&lt;&lt;</string>
+                        <key>end</key>
+                        <string>&gt;&gt;</string>
+                        <key>name</key>
+                        <string>comment.block.stata</string>
+                        <key>patterns</key>
+                        <array>
+                                <dict>
+                                    <key>include</key>
+                                    <string>#commentblock</string>
+                                </dict>
+                        </array>        
+                </dict>
                 <dict>
                         <key>match</key>
                         <string>(;\*\s*\#|^\s*\*\s*\#|\t\*\s*\#).*$\n?</string>
