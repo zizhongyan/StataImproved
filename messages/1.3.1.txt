@@ -7,11 +7,13 @@
  ABOUT
 *******
 
-Stata 15 introduced the markdown feature which allows one to convert their scripts into Word, PDF, or HTML files. 
-(For Stata 15 markdown feature, please see http://www.stata.com/new-in-stata/markdown/ ,  also this video: https://www.youtube.com/watch?v=vNry1vQiBxs )
+Stata 15 introduced the Markdown feature. The Stata Markdown can transform the narrative text, code and outputs into a elegantly formatted document (e.g. Word, PDF, or HTML files).
 
-Based on PJ Paul's comments, in this update, we provide the snippests for users to code the markdown script in ST3. 
-We also provide the syntax highlighting for the Stata 15 markdown documents.
+(For more information about Stata Markdown, please see http://www.stata.com/new-in-stata/markdown/, or this video: https://www.youtube.com/watch?v=vNry1vQiBxs )
+
+Based on PJ Paul's comments, in this update, we provide the **snippests** for users to code the markdown script in ST3 efficiently. 
+
+We also provide the **syntax highlighting** for the Stata Markdown documents.
 
 *******
  SETUP
@@ -48,6 +50,8 @@ type dd_ignore to trigger:
 
 (vi)
 type dd_tilde for insert the "~~~~" delimiter.
+
+
 
 
 
