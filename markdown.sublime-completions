@@ -1,0 +1,15 @@
+{
+	"scope": "source.stata - variable.other.stata",
+
+	"completions":
+	[
+		"stata",
+
+		{ "trigger": "dd_version", "contents": "<<dd_version: ${1:number} >>" },
+		{ "trigger": "dd_display", "contents": "<<dd_display: `${1: }'  >>" },
+		{ "trigger": "dd_display_number", "contents": "<<dd_display: %4.2f `${1:number}'>>" },
+		{ "trigger": "dd_tilde", "contents": "~~~~\n" },
+		{ "trigger": "dd_do", "contents": "<<dd_do>>\n${1:Stata_commands}\n<</dd_do>>\n" },
+		{ "trigger": "dd_ignore", "contents": "<<dd_ignore>>\n${1:}\n<</dd_ignore>>\n" }
+	]
+}
