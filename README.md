@@ -3,11 +3,11 @@
 The Sublime Text 3 (ST3) is probably the most popular text editor under the macOS platform. This plugin (v.1.3.0) is committed to making the ST3 to be the favourable and handy Stata do-file editor for Mac users.  
 
 * This package has been accepted by the [Sublime Text package manager](https://packagecontrol.io/packages/Stata%20Improved%20Editor) on 16th Jan 2017.
-* Last edited on 8th June 2017 by [Zizhong Yan](mailto:helloyzz@gmail.com) and [Chuhong Wang](mailto:flora7819@gmail.com). Comments are welcome. 
+* Last edited on 5th Aug 2017 by [Zizhong Yan](mailto:helloyzz@gmail.com) and [Chuhong Wang](mailto:flora7819@gmail.com). Comments are welcome. 
 
 
 ## 🎼 News 🎼 
-**v1.3.1 (05/Aug/17)**: Stata 15 introduced [the Markdown Document feature](http://www.stata.com/new-in-stata/markdown/) which allow users to convert their narrative text, code and outputs into a elegantly formatted document (e.g. Word, PDF, or HTML files). In this update, we provide the **snippests** and **syntax highlighting**  for users to code the markdown script in ST3 efficiently (Many thanks for [PJ Paul's](https://github.com/pjpaulpj)'s suggestions). [Please click here to see how to use it.](https://github.com/zizhongyan/StataImproved/blob/master/messages/markdown.md)
+**v1.3.1 (05/Aug/17)**: Stata 15 introduced [the Markdown Document feature](http://www.stata.com/new-in-stata/markdown/) which allow users to convert their narrative text, code and outputs into a elegantly formatted document (e.g. Word, PDF, or HTML files). In this update, we provide the **snippests** and **syntax highlighting**  for users to code the Stata markdown script **efficiently** (Many thanks for [PJ Paul's](https://github.com/pjpaulpj) suggestions). [Please click here to see how to use it.](https://github.com/zizhongyan/StataImproved/blob/master/messages/markdown.md)
 
 **v1.3.0 (04/Aug/17)**: Full support for **Stata 13, 14 and 15 SE/MP/IC**.  
 
