@@ -7,7 +7,9 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 
 
 ## 🎼 News 🎼 
-**v1.3.0 (04/Aug/17)**: Support for Stata 13, 14 and 15 SE/MP/IC. See below section of "Multiple Instances of Stata" for details.
+**v1.3.1 (05/Aug/17)**: Stata 15 introduced [the Markdown Document feature](http://www.stata.com/new-in-stata/markdown/) which allow users to convert their narrative text, code and outputs into a elegantly formatted document (e.g. Word, PDF, or HTML files). In this update, we provide the **snippests** and **syntax highlighting**  for users to code the markdown script in ST3 efficiently (Many thanks for [PJ Paul's](https://github.com/pjpaulpj)'s suggestions). [Please click here to see how to use it.](https://github.com/zizhongyan/StataImproved/blob/master/messages/markdown.md)
+
+**v1.3.0 (04/Aug/17)**: Full support for **Stata 13, 14 and 15 SE/MP/IC**.  
 
 **v1.1.2 (08/Jun/17)**: The shortcut <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd> can also be used to execute the WHOLE do-file if no Matlab-style code blocks are defined. Many thanks for [Alvaro Carril](http://alvarocarril.com/)'s suggestion on this! 
 
@@ -25,7 +27,8 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 #### 8, Select any command, press <kbd>F1</kbd> to see its help file. 
 #### 9, Select any variable(s), press <kbd>F2</kbd> to see the data browser. 
 #### 10, Press <kbd>F5</kbd>, insert the current date and time in the code.
-#### 11, Stata Syntax-highlighting  
+#### 11, Stata and MATA Syntax-highlighting  
+#### 12, Stata 15 Markdown Document support.
 
 ## 💿 Installations 
 Firstly you need to install the [Sublime Text 3 (ST3)](https://www.sublimetext.com/3).
