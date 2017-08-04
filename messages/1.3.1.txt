@@ -1,28 +1,53 @@
-Stata 15 introduced the markdown feature which allows one to convert their scripts into Word, PDF, or HTML files. (See http://www.stata.com/new-in-stata/markdown/)
+*************************************
+  Stata 15 Markdown in ST3
+  -- Snippet and Syntax Highlighting
+*************************************
+
+*******
+ ABOUT
+*******
+
+Stata 15 introduced the markdown feature which allows one to convert their scripts into Word, PDF, or HTML files. 
+(For Stata 15 markdown feature, please see http://www.stata.com/new-in-stata/markdown/ ,  also this video: https://www.youtube.com/watch?v=vNry1vQiBxs )
 
 Based on PJ Paul's comments, in this update, we provide the snippests for users to code the markdown script in ST3. 
 We also provide the syntax highlighting for the Stata 15 markdown documents.
 
-SETUP
+*******
+ SETUP
+*******
 1, In ST3, open/create a markdown script, which is normally a plain text file (e.g. txt). 
 2, Navigate to: View > Syntax > Open all with current extension as… > StataImproved > Stata".
 
-USE THE SNIPPET
+*****************
+ USE THE SNIPPET
+*****************
 (i)
-type dd_v for:
+type dd_v to trigger:
 <<dd_version: ... >>
+
 (ii)
-type dd_dis for:
-<<dd_display: %4.2f `....'>>
+type dd_display to trigger:
+<<dd_display: `....'>>
+
 (iii)
-type dd_do for:
+type dd_display_number to trigger:
+<<dd_display: %4.2f `....'>>
+
+(iv)
+type dd_do to trigger:
 <<dd_do>>
 ....
 <</dd_do>>
-(iv)
-type dd_ignore for:
+
+(v)
+type dd_ignore to trigger:
 <<dd_ignore>>
 ....
 <</dd_ignore>>
-(v)
-type dd_tilde for insert the ~~~~ delimiter.
+
+(vi)
+type dd_tilde for insert the "~~~~" delimiter.
+
+
+
