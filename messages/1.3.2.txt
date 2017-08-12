@@ -1,0 +1,60 @@
+*************************************
+  Running Stata code quiely by Ctrl+R
+  (v.1.3.2)
+*************************************
+As opposite to "do" the code by CTRL+d, CTRL+r can "run" the code quietly in Stata.
+
+*************************************
+  Stata 15 Markdown in ST3
+  -- Snippet and Syntax Highlighting
+  (v.1.3.1)
+*************************************
+
+*******
+ ABOUT
+*******
+
+Stata 15 introduced the Markdown feature. The Stata Markdown can transform the narrative text, code and outputs into a elegantly formatted document (e.g. Word, PDF, or HTML files).
+
+(For more information about Stata Markdown, please see http://www.stata.com/new-in-stata/markdown/, or this video: https://www.youtube.com/watch?v=vNry1vQiBxs )
+
+Based on PJ Paul's comments, in this update, we provide the **snippests** for users to code the markdown script in ST3 efficiently. 
+
+We also provide the **syntax highlighting** for the Stata Markdown documents.
+
+*******
+ SETUP
+*******
+1, In ST3, open/create a markdown script, which is normally a plain text file (e.g. txt). 
+2, Navigate to: View > Syntax > Open all with current extension as… > StataImproved > Stata".
+
+*****************
+ USE THE SNIPPET
+*****************
+(i)
+type dd_v to trigger:
+<<dd_version: ... >>
+
+(ii)
+type dd_display to trigger:
+<<dd_display: `....'>>
+
+(iii)
+type dd_display_number to trigger:
+<<dd_display: %4.2f `....'>>
+
+(iv)
+type dd_do to trigger:
+<<dd_do>>
+....
+<</dd_do>>
+
+(v)
+type dd_ignore to trigger:
+<<dd_ignore>>
+....
+<</dd_ignore>>
+
+(vi)
+type dd_tilde for insert the "~~~~" delimiter.
+
