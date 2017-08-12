@@ -5,9 +5,9 @@
 As opposite to "do" the code by CTRL+d, CTRL+r can "run" the code quietly in Stata.
 
 *************************************
-  Stata 15 Markdown in ST3
-  -- Snippet and Syntax Highlighting
-  (v.1.3.1)
+Stata 15 Markdown in ST3
+-- Snippet and Syntax Highlighting
+(v.1.3.2 - merged with PJ Paul's pull request)
 *************************************
 
 *******
