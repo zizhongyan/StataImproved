@@ -185,3 +185,26 @@ class InsertDatetimeCommand(sublime_plugin.TextCommand):
         sel = self.view.sel();
         for s in sel:
             self.view.replace(edit, s, time.ctime())
+class LinesStataRun(sublime_plugin.TextCommand): 
+	def run(self, edit): 
+		selectedcode = ""
+		sels = self.view.sel()
+		for sel in sels:
+			selectedcode = selectedcode + self.view.substr(sel)
+		if len(selectedcode) == 0:
+			selectedcode = self.view.substr(self.view.line(sel)) 
+		selectedcode = selectedcode + "\n"
+		dofile_path =tempfile.gettempdir()+'selectedlines_piupiu.do'
+		with codecs.open(dofile_path, 'w', encoding='utf-8') as out:  
+		    out.write(selectedcode) 
+		version, stata_app_id = get_stata_version()
+		cmd = """osascript<< END
+		 tell application id "{0}"
+		    DoCommandAsync "run {1}"  with addToReview
+		 end tell
+		 END""".format(stata_app_id,dofile_path) 
+		progswitch=sublime.load_settings('StataImproved.sublime-settings').get("prog")
+		print(cmd)
+		print("stata_app_id")
+		print(stata_app_id)
+		os.system(cmd)
