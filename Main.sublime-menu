@@ -32,14 +32,14 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/MacStataEditor/MacStataEditor (OSX).sublime-settings",
+                                    "file": "${packages}/Stata Improved Editor/StataImproved (OSX).sublime-settings",
                                     "platform": "OSX"
                                 },
                                 "caption": "Settings – Default"
                             }, 
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/User/MacStataEditor.sublime-settings"},
+                                "args": {"file": "${packages}/User/StataImproved (OSX).sublime-settings"},
                                 "caption": "Settings – User"
                             },
                             {
@@ -50,7 +50,7 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/MacStataEditor/Default (OSX).sublime-keymap",
+                                    "file": "${packages}/Stata Improved Editor/Default (OSX).sublime-keymap",
                                     "platform": "OSX"
                                 },
                                 "caption": "Key Bindings – Default"

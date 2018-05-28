@@ -48,7 +48,7 @@ If you could not find the package control in your ST3, you will need to install 
 Note that though the trial version of the ST3 is untimed and unlimited, the license need be purchased. 
 
 ### Manual installation
-Open the ST3, click the Preferences-> Browse Packages-> Then you will reach the folder `~/Library/Application Support/Sublime Text 3/Packages`. Download [this Stata plugin from here](https://github.com/zizhongyan/StataImproved/archive/master.zip), and unpack the zip fil into that folder, and rename it as "StataImproved". 
+Open the ST3, click the Preferences-> Browse Packages-> Then you will reach the folder `~/Library/Application Support/Sublime Text 3/Packages`. Download [this Stata plugin from here](https://github.com/zizhongyan/StataImproved/archive/master.zip), and unpack the zip fil into that folder, and rename it as "Stata Improved Editor". 
 
 
 
