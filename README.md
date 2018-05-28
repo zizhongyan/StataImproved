@@ -7,6 +7,7 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 
 
 ## 🎼 News 🎼 
+**v1.3.4 (28/May/2018)**: Some minor corrections. Also thanks for [WildGunman](https://github.com/WildGunman)'s suggestion on the [package config directories] (https://github.com/zizhongyan/StataImproved/pull/12).
 **v1.3.3 (12/Aug/17)**: <kbd>CTRL</kbd>+<kbd>r</kbd> can **run** the code **quietly** in Stata (as opposed to **do** it noisily by <kbd>CTRL</kbd>+<kbd>d</kbd>). Thanks a lot for [Andrea Discacciati's](http://ki.se/en/people/anddis) suggestions.
 
 **v1.3.1 (05/Aug/17)**: Stata 15 introduced [the Markdown Document feature](http://www.stata.com/new-in-stata/markdown/) which allow users to convert their narrative text, code and outputs into a elegantly formatted document (e.g. Word, PDF, or HTML files). In this update, we provide the **snippests** and **syntax highlighting**  for users to code the Stata markdown script **efficiently** (Many thanks for [PJ Paul's](https://github.com/pjpaulpj) suggestions). [Please click here to see how to use it.](https://github.com/zizhongyan/StataImproved/blob/master/messages/markdown.md)
