@@ -6,6 +6,8 @@
         <array>
                 <string>do</string>
                 <string>ado</string>
+                <string>doh</string>
+                <string>mata</string>
         </array>
         <key>foldingStartMarker</key>
         <string>\s*\(\s*$</string>
