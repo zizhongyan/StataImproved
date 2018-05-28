@@ -1,0 +1,8 @@
+
+*****************************
+Stata Improved Editor v.1.3.5
+*****************************
+
+Some minor corrections. Also thanks for WildGunman's suggestion on the package config directories.
+
+28 May 2018.
