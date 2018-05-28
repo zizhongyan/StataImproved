@@ -3,11 +3,11 @@
 The Sublime Text 3 (ST3) is probably the most popular text editor under the macOS platform. This plugin (v.1.3.3) is committed to making the ST3 to be the favourable and handy Stata do-file editor for Mac users.  
 
 * This package has been accepted by the [Sublime Text package manager](https://packagecontrol.io/packages/Stata%20Improved%20Editor) on 16th Jan 2017.
-* Last edited on 12th Aug 2017 by [Zizhong Yan](mailto:helloyzz@gmail.com) and [Chuhong Wang](mailto:flora7819@gmail.com). Comments are welcome. 
+* Last edited on 28th May 2018 by [Zizhong Yan](mailto:helloyzz@gmail.com) and [Chuhong Wang](mailto:flora7819@gmail.com). Comments are welcome. 
 
 
 ## 🎼 News 🎼 
-**v1.3.4 (28/May/2018)**: Some minor corrections. Also thanks for [WildGunman](https://github.com/WildGunman)'s suggestion on the [package config directories](https://github.com/zizhongyan/StataImproved/pull/12).
+**v1.3.4 (28/May/18)**: Some minor corrections. Also thanks for [WildGunman](https://github.com/WildGunman)'s suggestion on the [package config directories](https://github.com/zizhongyan/StataImproved/pull/12).
 
 **v1.3.3 (12/Aug/17)**: <kbd>CTRL</kbd>+<kbd>r</kbd> can **run** the code **quietly** in Stata (as opposed to **do** it noisily by <kbd>CTRL</kbd>+<kbd>d</kbd>). Thanks a lot for [Andrea Discacciati's](http://ki.se/en/people/anddis) suggestions.
 
