@@ -112,7 +112,7 @@ class PiuSign(sublime_plugin.TextCommand):
 		 END""".format(stata_app_id,dofile_path,"Viewer") 
 		os.system(cmd) 
 class lines_to_stataCommand(sublime_plugin.TextCommand): 
-	def run(self, edit): 
+	def run(self, edit):
 		selectedcode = ""
 		sels = self.view.sel()
 		for sel in sels:
@@ -192,13 +192,11 @@ class LinesStataRun(sublime_plugin.TextCommand):
 		print("stata_app_id")
 		print(stata_app_id)
 		os.system(cmd)
+
 class StataVarCompletionsListener(sublime_plugin.EventListener):
 	def on_query_completions(self, view, prefix, locations):
 		if not view.score_selector(locations[0], "source.stata"):
 			return
-		version, stata_app_id = get_stata_version()
-		export_cmd = 'qui export delimited using "/tmp/stata_vars.csv" in 1, replace'
-		stata_run(export_cmd, quiet=True, comment="Auto-complete")
 		tries = 0
 		while True:
 			try:
@@ -206,12 +204,21 @@ class StataVarCompletionsListener(sublime_plugin.EventListener):
 					stata_vars = f.readline().strip().split(',')
 					break
 			except FileNotFoundError:
+				refresh_var()
 				time.sleep(0.3)
 				tries += 1
 				if tries > 5:
 					break
 		completions = [(v + "\tStata Var", v) for v in stata_vars if prefix in v]
 		return completions
+
+class RefreshVarCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        refresh_var()
+
+def refresh_var():
+	export_cmd = 'qui export delimited using "/tmp/stata_vars.csv" in 1, replace'
+	stata_run(export_cmd, quiet=True, comment="Auto-complete")
 
 def stata_run(line, quiet=False, comment=""):
 	if quiet:
