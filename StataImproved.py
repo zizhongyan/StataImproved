@@ -194,6 +194,8 @@ class LinesStataRun(sublime_plugin.TextCommand):
 		os.system(cmd)
 class StataVarCompletionsListener(sublime_plugin.EventListener):
 	def on_query_completions(self, view, prefix, locations):
+		if not view.score_selector(locations[0], "source.stata"):
+			return
 		version, stata_app_id = get_stata_version()
 		export_cmd = 'qui export delimited using "/tmp/stata_vars.csv" in 1, replace'
 		stata_run(export_cmd)
@@ -221,7 +223,7 @@ def stata_run(line):
 	 tell application id "{0}"
 	    DoCommandAsync "do {1}"  with addToReview
 	 end tell
-	 END""".format(stata_app_id,dofile_path) 
+	 END""".format(stata_app_id, dofile_path) 
 	print(cmd)
 	print("stata_app_id")
 	print(stata_app_id)
