@@ -198,7 +198,7 @@ class StataVarCompletionsListener(sublime_plugin.EventListener):
 			return
 		version, stata_app_id = get_stata_version()
 		export_cmd = 'qui export delimited using "/tmp/stata_vars.csv" in 1, replace'
-		stata_run(export_cmd)
+		stata_run(export_cmd, quiet=True, comment="Auto-complete")
 		tries = 0
 		while True:
 			try:
@@ -213,7 +213,13 @@ class StataVarCompletionsListener(sublime_plugin.EventListener):
 		completions = [(v + "\tStata Var", v) for v in stata_vars if prefix in v]
 		return completions
 
-def stata_run(line):
+def stata_run(line, quiet=False, comment=""):
+	if quiet:
+		qui = "qui "
+	else:
+		qui = ""
+	if comment:
+		comment = "// " + comment
 	selectedcode = line + "\n"
 	dofile_path =tempfile.gettempdir()+'selectedlines_piupiu.do'
 	with codecs.open(dofile_path, 'w', encoding='utf-8') as out:  
@@ -221,9 +227,9 @@ def stata_run(line):
 	version, stata_app_id = get_stata_version()
 	cmd = """osascript<< END
 	 tell application id "{0}"
-	    DoCommandAsync "do {1}"  with addToReview
+	    DoCommandAsync "{1}do {2} {3}"  with addToReview
 	 end tell
-	 END""".format(stata_app_id, dofile_path) 
+	 END""".format(stata_app_id, qui, dofile_path, comment)
 	print(cmd)
 	print("stata_app_id")
 	print(stata_app_id)
