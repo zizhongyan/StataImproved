@@ -120,23 +120,7 @@ class lines_to_stataCommand(sublime_plugin.TextCommand):
 		if len(selectedcode) == 0:
 			selectedcode = self.view.substr(self.view.line(sel)) 
 		selectedcode = selectedcode + "\n"
-		dofile_path =tempfile.gettempdir()+'selectedlines_piupiu.do'
-		with codecs.open(dofile_path, 'w', encoding='utf-8') as out:  
-		    out.write(selectedcode) 
-		# cmd = "/Applications/Stata/StataSE.app/Contents/MacOS/StataSE 'do /Users/piupiu/Downloads/a'"
-		# os.popen(cmd) 
-		# cmd = """osascript -e 'tell application "StataSE" to open POSIX file "{0}"' -e 'tell application "{1}" to activate' &""".format(dofile_path, "Viewer") 
-		# os.system(cmd) 
-		version, stata_app_id = get_stata_version()
-		cmd = """osascript<< END
-		 tell application id "{0}"
-		    DoCommandAsync "do {1}"  with addToReview
-		 end tell
-		 END""".format(stata_app_id,dofile_path) 
-		print(cmd)
-		print("stata_app_id")
-		print(stata_app_id)
-		os.system(cmd)
+		stata_run(selectedcode)
 class StataHelpCommand(sublime_plugin.TextCommand):
 	def run(self,edit):
 		self.view.run_command("expand_selection", {"to": "word"})
@@ -165,7 +149,7 @@ class StataBro(sublime_plugin.TextCommand):
 		help_word = self.view.substr(sel)
 		selectedcode = "browse " + help_word  + "\n"   
 		dofile_path = os.path.join(os.path.dirname(self.view.file_name()), 'from_sublime.do')
-		dofile_path =tempfile.gettempdir()+'BROWSE_piupiu.do'
+		dofile_path = tempfile.gettempdir()+'BROWSE_piupiu.do'
 		with codecs.open(dofile_path, 'w', encoding='utf-8') as out:  
 		    out.write(selectedcode) 
 		# cmd = """osascript -e 'tell application "Finder" to open POSIX file "{0}"' -e 'tell application "{1}" to activate' &""".format(dofile_path, "Viewer") 
@@ -208,3 +192,37 @@ class LinesStataRun(sublime_plugin.TextCommand):
 		print("stata_app_id")
 		print(stata_app_id)
 		os.system(cmd)
+class StataVarCompletionsListener(sublime_plugin.EventListener):
+	def on_query_completions(self, view, prefix, locations):
+		version, stata_app_id = get_stata_version()
+		export_cmd = 'qui export delimited using "/tmp/stata_vars.csv" in 1, replace'
+		stata_run(export_cmd)
+		tries = 0
+		while True:
+			try:
+				with open("/tmp/stata_vars.csv", 'r') as f:
+					stata_vars = f.readline().strip().split(',')
+					break
+			except FileNotFoundError:
+				time.sleep(0.3)
+				tries += 1
+				if tries > 5:
+					break
+		completions = [(v + "\tStata Var", v) for v in stata_vars if prefix in v]
+		return completions
+
+def stata_run(line):
+	selectedcode = line + "\n"
+	dofile_path =tempfile.gettempdir()+'selectedlines_piupiu.do'
+	with codecs.open(dofile_path, 'w', encoding='utf-8') as out:  
+	    out.write(selectedcode)
+	version, stata_app_id = get_stata_version()
+	cmd = """osascript<< END
+	 tell application id "{0}"
+	    DoCommandAsync "do {1}"  with addToReview
+	 end tell
+	 END""".format(stata_app_id,dofile_path) 
+	print(cmd)
+	print("stata_app_id")
+	print(stata_app_id)
+	os.system(cmd)
