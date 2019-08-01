@@ -7,7 +7,7 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 
 
 ## 🎼 News 🎼 
-**v1.3.4 (28/May/18)**: Full support for **Stata 13, 14, 15 and 16 SE/MP/IC**.  
+**v1.3.4 (01/Aug/18)**: Full support for **Stata 13, 14, 15 and 16 SE/MP/IC**.  
 
 **v1.3.4 (28/May/18)**: Some minor corrections. Also thanks for [WildGunman](https://github.com/WildGunman)'s suggestion on the [package config directories](https://github.com/zizhongyan/StataImproved/pull/12).
 
