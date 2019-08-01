@@ -163,7 +163,7 @@ This plugin basically creates a temporary do-file, which is then sent to the Sta
 2, This package is the Mac only. For Windows users, please follow the instructions in the Nicolas J. Cox's webpage above.
  
         
-3, This plugin has been tested on Mac OS X Yosemite, El Capitan and macOS, and supports Stata 13, 14 and 15 SE/MP/IC.
+3, This plugin has been tested on Mac OS X Yosemite, El Capitan and macOS, and supports Stata 13, 14, 15 and 16 SE/MP/IC.
  
 ## License
 MIT License
