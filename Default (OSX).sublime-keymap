@@ -3,6 +3,9 @@
     "keys": ["ctrl+d"], "command": "lines_to_stata"
   },
   {
+    "keys": ["super+enter"], "command": "lines_to_stata"
+  },
+  {
     "keys": ["ctrl+r"], "command": "lines_stata_run"
   },
   { "keys": ["f1"], "command": "stata_help", "context":
