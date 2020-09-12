@@ -2,7 +2,7 @@
 Improved Stata Editor for mac users 
 -------------------------------------
 
-Full support Stata 13-15.
+Full support Stata 13-16 & mac OS Catalina.
 
 Project homepage: https://github.com/zizhongyan/StataImproved
 
