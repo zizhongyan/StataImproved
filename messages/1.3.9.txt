@@ -1,0 +1,2 @@
+
+Full support Stata 13-16 & mac OS Catalina. 
