@@ -3,7 +3,7 @@
 The Sublime Text 3 (ST3) is probably the most popular text editor under the macOS platform. This plugin (v.1.3.9) is committed to making the ST3 to be the favourable and handy Stata do-file editor for Mac users.  
 
 * This package has been accepted by the [Sublime Text package manager](https://packagecontrol.io/packages/Stata%20Improved%20Editor) on 16th Jan 2017.
-* Last edited on 1st Aug 2019 by [Zizhong Yan](mailto:helloyzz@gmail.com). Comments are welcome. 
+* Last edited on 12th Sep 2020 by [Zizhong Yan](mailto:helloyzz@gmail.com). Comments are welcome. 
 
 
 ## 🎼 News 🎼 
