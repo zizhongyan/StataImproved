@@ -7,7 +7,7 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 
 
 ## 🎼 News 🎼 
-**v1.3.10 (11/May/21)**: Full support for **Stata 17 as well (in progress). One could now "cmd+" again to make "/* word */" to "word",   **.  
+**v1.3.10 (11/May/21)**: Full support for **Stata 17 as well (in progress). Now one can select any word, press `$` to make it as ${word}. And select ${word}, press `$` to make it as word. Select any word, press <kbd>CMD</kbd> +<kbd>/</kbd> to make the selected word toggled. And press <kbd>CMD</kbd> +<kbd>/</kbd>  again to make toggled word  to original word.    **.  
 
 **v1.3.9 (12/Sep/20)**: Full support for **macOS Catalina** & **Stata 13, 14, 15 and 16 SE/MP/IC**.  
 
@@ -128,18 +128,20 @@ Again, press <kbd>TAB</kbd> to fill up this template.
 ### 🎷Macros - Local and Global
 Select any word, press <kbd>\`</kbd> to make it as 'word'. 
 
-Select any word, press `$` to make it as ${word}. 
+Select any word, press `$` to make it as ${word}. And select ${word} press `$` to make it as word.
 
 🏊New: If you did not select any word but put the cursor in a word, then pressing `CMD+`<kbd>\`</kbd> can also make it as 'word'.
 
 <img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu9.gif" width="550">
 
 ### 🎷Toggle comments
-Select any word, press <kbd>CMD</kbd> +<kbd>/</kbd> 
+Select any word, press <kbd>CMD</kbd> +<kbd>/</kbd> to make the selected word toggled.
+
+And press <kbd>CMD</kbd> +<kbd>/</kbd>  again to make toggled word  to original word.
+
 
 <img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu10.gif" width="550">
 
-Press <kbd>CMD</kbd> +<kbd>/</kbd>  again to make **/* word */** to **word**
 
 ### 🎷Help File 
  Select any command, press <kbd>F1</kbd>  to see the help file. 
