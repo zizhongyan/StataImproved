@@ -7,7 +7,7 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 
 
 ## 🎼 News 🎼 
-**v1.3.10 (11/May/21)**: Full support for **Stata 17 as well (in progress)**.  
+**v1.3.10 (11/May/21)**: Full support for **Stata 17 as well (in progress). One could now "cmd+" again to make "/* word */" to "word",   **.  
 
 **v1.3.9 (12/Sep/20)**: Full support for **macOS Catalina** & **Stata 13, 14, 15 and 16 SE/MP/IC**.  
 
@@ -139,6 +139,7 @@ Select any word, press <kbd>CMD</kbd> +<kbd>/</kbd>
 
 <img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu10.gif" width="550">
 
+Press <kbd>CMD</kbd> +<kbd>/</kbd>  again to make **/* word */** to **word**
 
 ### 🎷Help File 
  Select any command, press <kbd>F1</kbd>  to see the help file. 
