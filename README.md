@@ -7,7 +7,7 @@ The Sublime Text 3 (ST3) is probably the most popular text editor under the macO
 
 
 ## 🎼 News 🎼 
-**v1.3.10 (11/May/21)**: Full support for **Stata 17 as well (in progress). Now one can select any word, press `$` to make it as ${word}. And select ${word}, press `$` to make it as word. Select any word, press <kbd>CMD</kbd> +<kbd>/</kbd> to make the selected word toggled. And press <kbd>CMD</kbd> +<kbd>/</kbd>  again to make toggled word  to original word.    **.  
+**v1.3.10 (11/May/21)**: Full support for **Stata 17** as well (in progress). Now one can select any word, press `$` to make it as ${word}. And select ${word}, press `$` to make it as word. Select any word, press <kbd>CMD</kbd> +<kbd>/</kbd> to make the selected word toggled. And press <kbd>CMD</kbd> +<kbd>/</kbd>  again to make toggled word  to original word.  
 
 **v1.3.9 (12/Sep/20)**: Full support for **macOS Catalina** & **Stata 13, 14, 15 and 16 SE/MP/IC**.  
 
