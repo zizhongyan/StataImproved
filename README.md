@@ -175,7 +175,7 @@ This plugin basically creates a temporary do-file, which is then sent to the Sta
 ## License
 MIT License
 
-Copyright (c) 2016-2021 Zizhong Yan & Chuhong Wang
+Copyright (c) 2016-2021 Zizhong Yan and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
