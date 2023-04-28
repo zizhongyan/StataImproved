@@ -3,10 +3,12 @@
 The Sublime Text 3 (ST3) is probably the most popular text editor under the macOS platform. This plugin (v.1.3.9) is committed to making the ST3 to be the favourable and handy Stata do-file editor for Mac users.  
 
 * This package has been accepted by the [Sublime Text package manager](https://packagecontrol.io/packages/Stata%20Improved%20Editor) on 16th Jan 2017.
-* Last edited on 11th May 2021 by [Zizhong Yan](mailto:helloyzz@gmail.com). Comments are welcome. 
+* Last edited on 29th April 2023 by [Zizhong Yan](mailto:helloyzz@gmail.com). Comments are welcome. 
 
 
 ## 🎼 News 🎼 
+**v1.3.15 (29/Apr/23)**: Full support for **Stata 18** is made.  
+
 **v1.3.10 (11/May/21)**: Full support for **Stata 17** as well (in progress). Now one can select any word, press `$` to make it as ${word}. And select ${word}, press `$` to make it as word. Select any word, press <kbd>CMD</kbd> +<kbd>/</kbd> to make the selected word toggled. And press <kbd>CMD</kbd> +<kbd>/</kbd>  again to make toggled word  to original word.  
 
 **v1.3.9 (12/Sep/20)**: Full support for **macOS Catalina** & **Stata 13, 14, 15 and 16 SE/MP/IC**.  
