@@ -169,7 +169,7 @@ If different versions of Stata are installed in your Mac (e.g. both Stata 14 and
 This plugin basically creates a temporary do-file, which is then sent to the Stata to execute. All temporary cache files will be removed shortly when you close the Stata session.
 
 
-2, This package is the Mac only. For Windows users, please follow the instructions in the Nicolas J. Cox's webpage above.
+2, This package is for macOS only. For Windows users, please follow the instructions in the Nicolas J. Cox's webpage above.
  
         
 3, This plugin has been tested on macOS Monterey, and supports Stata 13-18 SE/MP/IC.
