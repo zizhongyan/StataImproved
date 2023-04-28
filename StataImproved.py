@@ -77,7 +77,7 @@ def get_stata_version():   # get_stata_version is modefied based on the Stata En
                     set stata to 17
                 end try
                 try
-                    tell me to get application id "com.stata.stata17"
+                    tell me to get application id "com.stata.stata18"
                     set stata to 18
                 end try
                 return stata
