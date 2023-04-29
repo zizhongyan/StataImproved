@@ -1,0 +1,1 @@
+Now the full support for Stata 18 is added. A small bug is fixed.
