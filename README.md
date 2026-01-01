@@ -1,9 +1,13 @@
-# Stata Improved Editor for macOS : using sublime text
+# Stata Improved Editor for macOS : using Sublime Text
 
-The Sublime Text (ST) is probably the most popular text editor under the macOS platform. This plugin (v.1.3.19) is committed to making the ST to be the favourable and handy Stata do-file editor for Mac users.  
+Stata Improved Editor is a polished Sublime Text plugin built to deliver a highly productive Stata do-file workflow on macOS. 
 
-* This package has been accepted by the [Sublime Text package manager](https://packagecontrol.io/packages/Stata%20Improved%20Editor) on 16th Jan 2017.
-* Last edited on 1st January 2026 by [Zizhong Yan](mailto:helloyzz@gmail.com). Comments are welcome. 
+It supports Stata 13–19 (including StataNow), with streamlined shortcuts for sending code to Stata, cell-style execution, snippets/templates, comment toggles, and Stata/Mata syntax highlighting.
+
+> **Note:** To get started, please install [Sublime Text](https://www.sublimetext.com/3). After installing (or updating) this package, please **restart Sublime Text 3** so that all commands and key bindings load correctly.
+
+* Available via [Package Control](https://packagecontrol.io/packages/Stata%20Improved%20Editor) since **16 Jan 2017**.
+* Maintained by [Zizhong Yan](mailto:helloyzz@gmail.com). Last updated: **1 Jan 2026**. Feedback is welcome.
 
 
 ## 🎼 News 🎼 
@@ -12,22 +16,6 @@ The Sublime Text (ST) is probably the most popular text editor under the macOS p
 **v1.3.17 (29/Apr/23)**: Full support for **Stata 18** is made.  
 
 **v1.3.10 (11/May/21)**: Full support for **Stata 17** as well (in progress). Now one can select any word, press `$` to make it as ${word}. And select ${word}, press `$` to make it as word. Select any word, press <kbd>CMD</kbd> +<kbd>/</kbd> to make the selected word toggled. And press <kbd>CMD</kbd> +<kbd>/</kbd>  again to make toggled word  to original word.  
-
-**v1.3.9 (12/Sep/20)**: Full support for **macOS Catalina** & **Stata 13, 14, 15 and 16 SE/MP/IC**.  
-
-**v1.3.7 (01/Aug/19)**: Full support for **Stata 13, 14, 15 and 16 SE/MP/IC**.  
-
-**v1.3.4 (28/May/18)**: Some minor corrections. Also thanks for [WildGunman](https://github.com/WildGunman)'s suggestion on the [package config directories](https://github.com/zizhongyan/StataImproved/pull/12).
-
-**v1.3.3 (12/Aug/17)**: <kbd>CTRL</kbd>+<kbd>r</kbd> can **run** the code **quietly** in Stata (as opposed to **do** it noisily by <kbd>CTRL</kbd>+<kbd>d</kbd>). Thanks a lot for [Andrea Discacciati's](http://ki.se/en/people/anddis) suggestions.
-
-**v1.3.1 (05/Aug/17)**: Stata 15 introduced [the Markdown Document feature](http://www.stata.com/new-in-stata/markdown/) which allow users to convert their narrative text, code and outputs into a elegantly formatted document (e.g. Word, PDF, or HTML files). In this update, we provide the **snippests** and **syntax highlighting**  for users to code the Stata markdown script **efficiently** (Many thanks for [PJ Paul's](https://github.com/pjpaulpj) suggestions). [Please click here to see how to use it.](https://github.com/zizhongyan/StataImproved/blob/master/messages/markdown.md)
-
-**v1.3.0 (04/Aug/17)**: Full support for **Stata 13, 14 and 15 SE/MP/IC**.  
-
-**v1.1.2 (08/Jun/17)**: The shortcut <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd> can also be used to execute the WHOLE do-file if no Matlab-style code blocks are defined. Many thanks for [Alvaro Carril](http://alvarocarril.com/)'s suggestion on this! 
-
-**v1.1.0 (14/Feb/17)**: We fixed the ctrl+d problem for users installed via package control! 
 
 
 ## 🏆 Main Features
@@ -174,8 +162,33 @@ This plugin basically creates a temporary do-file, which is then sent to the Sta
 2, This package is for macOS only. For Windows users, please follow the instructions in the Nicolas J. Cox's webpage above.
  
         
-3, This plugin has been tested on macOS Monterey, and supports Stata 13-18 SE/MP/IC.
- 
+3, This plugin has been tested on macOS Monterey, and supports Stata 13-19 (StataNow) SE/MP/IC.
+
+
+## 🎼 Update history 🎼 
+**v1.3.19 (01/Jan/26)**: Full support for **Stata 19** and  **StataNow** is made.  
+
+**v1.3.17 (29/Apr/23)**: Full support for **Stata 18** is made.  
+
+**v1.3.10 (11/May/21)**: Full support for **Stata 17** as well (in progress). Now one can select any word, press `$` to make it as ${word}. And select ${word}, press `$` to make it as word. Select any word, press <kbd>CMD</kbd> +<kbd>/</kbd> to make the selected word toggled. And press <kbd>CMD</kbd> +<kbd>/</kbd>  again to make toggled word  to original word.  
+
+**v1.3.9 (12/Sep/20)**: Full support for **macOS Catalina** & **Stata 13, 14, 15 and 16 SE/MP/IC**.  
+
+**v1.3.7 (01/Aug/19)**: Full support for **Stata 13, 14, 15 and 16 SE/MP/IC**.  
+
+**v1.3.4 (28/May/18)**: Some minor corrections. Also thanks for [WildGunman](https://github.com/WildGunman)'s suggestion on the [package config directories](https://github.com/zizhongyan/StataImproved/pull/12).
+
+**v1.3.3 (12/Aug/17)**: <kbd>CTRL</kbd>+<kbd>r</kbd> can **run** the code **quietly** in Stata (as opposed to **do** it noisily by <kbd>CTRL</kbd>+<kbd>d</kbd>). Thanks a lot for [Andrea Discacciati's](http://ki.se/en/people/anddis) suggestions.
+
+**v1.3.1 (05/Aug/17)**: Stata 15 introduced [the Markdown Document feature](http://www.stata.com/new-in-stata/markdown/) which allow users to convert their narrative text, code and outputs into a elegantly formatted document (e.g. Word, PDF, or HTML files). In this update, we provide the **snippests** and **syntax highlighting**  for users to code the Stata markdown script **efficiently** (Many thanks for [PJ Paul's](https://github.com/pjpaulpj) suggestions). [Please click here to see how to use it.](https://github.com/zizhongyan/StataImproved/blob/master/messages/markdown.md)
+
+**v1.3.0 (04/Aug/17)**: Full support for **Stata 13, 14 and 15 SE/MP/IC**.  
+
+**v1.1.2 (08/Jun/17)**: The shortcut <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd> can also be used to execute the WHOLE do-file if no Matlab-style code blocks are defined. Many thanks for [Alvaro Carril](http://alvarocarril.com/)'s suggestion on this! 
+
+**v1.1.0 (14/Feb/17)**: We fixed the ctrl+d problem for users installed via package control! 
+
+
 ## License
 MIT License
 
