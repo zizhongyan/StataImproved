@@ -1,13 +1,13 @@
 # Stata Improved Editor for macOS : using sublime text
 
-The Sublime Text (ST) is probably the most popular text editor under the macOS platform. This plugin (v.1.3.17) is committed to making the ST to be the favourable and handy Stata do-file editor for Mac users.  
+The Sublime Text (ST) is probably the most popular text editor under the macOS platform. This plugin (v.1.3.19) is committed to making the ST to be the favourable and handy Stata do-file editor for Mac users.  
 
 * This package has been accepted by the [Sublime Text package manager](https://packagecontrol.io/packages/Stata%20Improved%20Editor) on 16th Jan 2017.
 * Last edited on 1st January 2026 by [Zizhong Yan](mailto:helloyzz@gmail.com). Comments are welcome. 
 
 
 ## 🎼 News 🎼 
-**v1.3.18 (01/Jan/26)**: Full support for **Stata 19** is made.  
+**v1.3.19 (01/Jan/26)**: Full support for **Stata 19** and  **StataNow** is made.  
 
 **v1.3.17 (29/Apr/23)**: Full support for **Stata 18** is made.  
 
