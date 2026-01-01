@@ -1,0 +1,9 @@
+-------------------------------------
+Improved Stata Editor for mac users 
+-------------------------------------
+
+Full support Stata 13-19 (StataNow) & mac OS Catalina.
+
+Project homepage: https://github.com/zizhongyan/StataImproved
+
+Author: Zizhong Yan
