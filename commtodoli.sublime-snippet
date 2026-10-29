@@ -7,6 +7,6 @@
 -------------------------*/ 
 ]]></content>
 	<tabTrigger>comm-t</tabTrigger>
-	<scope>source.stata</scope>scope>
-	<description>To Do List</description>description
+	<scope>source.stata</scope>
+	<description>To Do List</description>
 </snippet>

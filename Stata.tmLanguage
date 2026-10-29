@@ -39,7 +39,13 @@
                 </dict>
                 <dict>
                         <key>match</key>
-                        <string>(\b[A-Za-z0-9_]+\.dta|[A-Za-z0-9_]+\.txt|[A-Za-z0-9_]+\.dct|[A-Za-z0-9_]+\.do|[A-Za-z0-9_]+\.ado|\$\w+)\b</string>
+                        <string>\$\{[^}\s]*\}|\$\w+</string>
+                        <key>name</key>
+                        <string>variable.other.macro.global.stata</string>
+                </dict>
+                <dict>
+                        <key>match</key>
+                        <string>(\b[A-Za-z0-9_]+\.dta|[A-Za-z0-9_]+\.txt|[A-Za-z0-9_]+\.dct|[A-Za-z0-9_]+\.do|[A-Za-z0-9_]+\.ado)\b</string>
                         <key>name</key>
                         <string>variable.language.stata</string>
                 </dict>
@@ -61,7 +67,7 @@
                         <key>end</key>
                         <string>(?&lt;!")'</string>
                         <key>name</key>
-                        <string>string.quoted.single.stata</string>
+                        <string>variable.other.macro.local.stata</string>
                         <key>patterns</key>
                         <array>
                                 <dict>

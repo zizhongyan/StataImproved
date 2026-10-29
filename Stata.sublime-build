@@ -1,10 +1,14 @@
 {
   "selector": "source.stata",
-  "osx": 
+  "osx":
   {
-    "cmd": ["osascript", 
+    "cmd": ["osascript",
             "-e", "try",
             "-e", "tell application \"Finder\" to activate & open POSIX file \"$file\"",
             "-e", "end try"]
+  },
+  "windows":
+  {
+    "cmd": ["cmd", "/c", "start", "", "$file"]
   }
 }

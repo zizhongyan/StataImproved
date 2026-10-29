@@ -4,13 +4,14 @@
         "children":
         [
             {
-                "caption": "Improved Stata Editor for macOS",
+                "caption": "Stata Improved Editor",
                 "children":
                 [
-                    {
-                        "caption": "Send selected code to Stata",
-                        "command": "lines_to_stata"
-                    }
+                    { "caption": "Do Selection or Current Line", "command": "lines_to_stata" },
+                    { "caption": "Run Selection or Current Line Quietly", "command": "lines_stata_run" },
+                    { "caption": "Do Block (or Whole File)", "command": "piu_sign" },
+                    { "caption": "-" },
+                    { "caption": "Register Stata Automation (Windows, optional)…", "command": "stata_register_automation" }
                 ]
             }
         ]
@@ -26,43 +27,26 @@
                 "children":
                 [
                     {
-                        "caption": "Stata Editor for macOS",
+                        "caption": "Stata Improved Editor",
                         "children":
                         [
                             {
-                                "command": "open_file",
+                                "caption": "Settings",
+                                "command": "edit_settings",
                                 "args": {
-                                    "file": "${packages}/Stata Improved Editor/StataImproved (OSX).sublime-settings",
-                                    "platform": "OSX"
-                                },
-                                "caption": "Settings – Default"
-                            }, 
-                            {
-                                "command": "open_file",
-                                "args": {"file": "${packages}/User/StataImproved (OSX).sublime-settings"},
-                                "caption": "Settings – User"
+                                    "base_file": "${packages}/Stata Improved Editor/StataImproved.sublime-settings",
+                                    "default": "// Settings in here override those in \"Stata Improved Editor/StataImproved.sublime-settings\"\n{\n\t$0\n}\n"
+                                }
                             },
                             {
-                                "command": "open_file_settings",
-                                "caption": "Settings – Syntax Specific – User"
-                            },
-                            { "caption": "-" },
-                            {
-                                "command": "open_file",
+                                "caption": "Key Bindings",
+                                "command": "edit_settings",
                                 "args": {
-                                    "file": "${packages}/Stata Improved Editor/Default (OSX).sublime-keymap",
-                                    "platform": "OSX"
-                                },
-                                "caption": "Key Bindings – Default"
-                            }, 
-                            {
-                                "command": "open_file",
-                                "args": {
-                                    "file": "${packages}/User/Default (OSX).sublime-keymap",
-                                    "platform": "OSX"
-                                },
-                                "caption": "Key Bindings – User"
-                            } 
+                                    "base_file": "${packages}/Stata Improved Editor/Default ($platform).sublime-keymap",
+                                    "user_file": "${packages}/User/Default ($platform).sublime-keymap",
+                                    "default": "[\n\t$0\n]\n"
+                                }
+                            }
                         ]
                     }
                 ]

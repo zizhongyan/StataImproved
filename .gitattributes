@@ -1,0 +1,7 @@
+# Not needed by Sublime Text; keep them out of the archives Package Control installs.
+/.gitattributes export-ignore
+/docs export-ignore
+/tests export-ignore
+/tools export-ignore
+/pictures export-ignore
+/TestFile.do export-ignore

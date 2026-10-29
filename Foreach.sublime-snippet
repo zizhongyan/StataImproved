@@ -5,6 +5,6 @@ foreach ${1:w} in ${2:varlist} {
 }  // end of foreach ${1:w} in ${2:varlist}
 ]]></content>
 	<tabTrigger>fore</tabTrigger>
-	<scope>source.stata</scope>scope>
-	<description>Foreach</description>description
+	<scope>source.stata</scope>
+	<description>Foreach</description>
 </snippet>

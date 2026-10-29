@@ -3,6 +3,6 @@
 generate ${1:XX} = ${2:XXX}  
 ]]></content>
 	<tabTrigger>generate</tabTrigger>
-	<scope>source.stata</scope>scope>
-	<description>Generate command</description>description
+	<scope>source.stata</scope>
+	<description>Generate command</description>
 </snippet>

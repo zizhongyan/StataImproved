@@ -1,16 +1,18 @@
-# Stata Improved Editor for macOS : using Sublime Text
+# Stata Improved Editor for Sublime Text (macOS & Windows)
 
-Stata Improved Editor is a polished Sublime Text plugin built to deliver a highly productive Stata do-file workflow on macOS. 
+Stata Improved Editor is a polished Sublime Text plugin built to deliver a highly productive Stata do-file workflow on macOS and Windows.
 
-It supports Stata 13–19 (including StataNow), with streamlined shortcuts for sending code to Stata, cell-style execution, snippets/templates, comment toggles, and Stata/Mata syntax highlighting.
+It supports Stata 13–19 (including StataNow) and Sublime Text 4 (and 3), with streamlined shortcuts for sending code to Stata, cell-style execution, snippets/templates, comment toggles, and Stata/Mata syntax highlighting.
 
-> **Note:** To get started, please install [Sublime Text](https://www.sublimetext.com/3). After installing (or updating) this package, please **restart Sublime Text 3** so that all commands and key bindings load correctly.
+> **Note:** To get started, please install [Sublime Text](https://www.sublimetext.com/download). After installing (or updating) this package, please **restart Sublime Text** so that all commands and key bindings load correctly.
 
 * Available via [Package Control](https://packagecontrol.io/packages/Stata%20Improved%20Editor) since **16 Jan 2017**.
 * Maintained by [Zizhong Yan](mailto:helloyzz@gmail.com). Last updated: **1 Jan 2026**. Feedback is welcome.
 
 
 ## 🎼 News 🎼 
+**v2.0.0**: **Sublime Text 4** (Python 3.14 plugin host) and **Windows** support. On Windows, code is typed into Stata's Command window; no setup needed (see [Windows setup](#windows-setup)). Key bindings now only apply in Stata files; `$` alone types `$` again; <kbd>CMD</kbd>+<kbd>/</kbd> without a selection comments the line with `//`; the Stata version can be pinned in the settings. Fixes for one-letter words, unsaved files and temporary files (#37, #38, #39).
+
 **v1.3.19 (01/Jan/26)**: Full support for **Stata 19** and  **StataNow** is made.  
 
 **v1.3.17 (29/Apr/23)**: Full support for **Stata 18** is made.  
@@ -33,26 +35,64 @@ It supports Stata 13–19 (including StataNow), with streamlined shortcuts for s
 #### 12, Stata 15 Markdown Document support.
 
 ## 💿 Installations 
-Firstly you need to install the [Sublime Text 3 (ST3)](https://www.sublimetext.com/3).
+Firstly you need to install [Sublime Text](https://www.sublimetext.com/download) (Sublime Text 4 is recommended; Sublime Text 3 still works).
 
 ### Installation via packge control. (easiest and recommended🏅)
 The installation is very simple as this package has been accepted by the [Sublime Text package manager](https://packagecontrol.io). There are 3 steps:
 
-* Open the ST3, from the main application menu, navigate to `Tools`, open the `Command Palette` (shortcut: <kbd>CMD</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd>)
+* Open Sublime Text, from the main application menu, navigate to `Tools`, open the `Command Palette` (shortcut: <kbd>CMD</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd> on macOS, <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd> on Windows)
 * Select `Package Control: Install Package`
-* Search `Stata Improved Editor` and hit <kbd>Enter</kbd> to complete installation.
+* Search `Stata Improved Editor` and hit <kbd>Enter</kbd> to complete installation.
 
- 
-If you could not find the package control in your ST3, you will need to install it in advance. To install it, please go to [this webpage](https://packagecontrol.io/installation). 
+If you could not find the package control in your Sublime Text, you will need to install it in advance. To install it, please go to [this webpage](https://packagecontrol.io/installation). 
 
-Note that though the trial version of the ST3 is untimed and unlimited, the license need be purchased. 
+Note that though the trial version of Sublime Text is untimed and unlimited, the license need be purchased. 
 
 ### Manual installation
-Open the ST3, click the Preferences-> Browse Packages-> Then you will reach the folder `~/Library/Application Support/Sublime Text 3/Packages`. Download [this Stata plugin from here](https://github.com/zizhongyan/StataImproved/archive/master.zip), and unpack the zip fil into that folder, and rename it as "Stata Improved Editor". 
+Open Sublime Text, click the Preferences-> Browse Packages-> Then you will reach the `Packages` folder (e.g. `~/Library/Application Support/Sublime Text/Packages` on macOS, `%APPDATA%\Sublime Text\Packages` on Windows). Download [this Stata plugin from here](https://github.com/zizhongyan/StataImproved/archive/master.zip), and unpack the zip fil into that folder, and rename it as "Stata Improved Editor". 
 
+### macOS setup
+Nothing to configure in Stata itself: install Stata (13 or later) and open it once. The first time you send code, macOS asks whether Sublime Text may control Stata (`System Settings > Privacy & Security > Automation`); allow it. Then open a `.do` file, select some lines (or none, for the current line) and press <kbd>CTRL</kbd>+<kbd>d</kbd>. If you have several Stata versions installed, pick one with `"stata_version"`.
+
+### Windows setup
+Nothing to set up: the plugin types the code into Stata's Command window (Stata may be minimized or busy; it does not need the focus). If no Stata is running, the newest installed Stata is started. If Stata is installed in an unusual folder, set `"stata_path"` in `Preferences > Package Settings > Stata Improved Editor > Settings`.
+
+Notes for Windows:
+* This was developed and verified with **Stata 18** (MP, Chinese user interface). Other versions should work, but the plugin relies on how Stata lays out its main window; if it cannot find the Command window it tells you so.
+* A user name with non-ASCII characters (e.g. Chinese) is fine. Only if Stata is **minimized** *and* the temporary folder's path contains non-ASCII characters, the plugin needs Stata 14 or later. (To avoid that entirely, set `"temp_directory"` to a folder with an ASCII-only path.)
+* If Stata runs as administrator, Sublime Text has to run as administrator too (Windows blocks input to a higher-privileged program).
+
+Alternatively, `"windows_method": "automation"` uses [Stata Automation](https://www.stata.com/automation/) (run `Stata Improved: Register Stata Automation (Windows, optional)` once). Be aware that Stata then closes when Sublime Text lets go of it (some minutes after Sublime Text exits), without asking to save your data.
 
 
 ## 🎷 Usage 
+### ⌨️ Key bindings
+All key bindings only apply in Stata files (`.do`, `.ado`).
+
+| Action | macOS | Windows |
+|---|---|---|
+| Do selection / current line | <kbd>CTRL</kbd>+<kbd>d</kbd> or <kbd>CMD</kbd>+<kbd>Enter</kbd> | <kbd>CTRL</kbd>+<kbd>d</kbd> or <kbd>CTRL</kbd>+<kbd>Enter</kbd> |
+| Run selection / current line quietly | <kbd>CTRL</kbd>+<kbd>r</kbd> | <kbd>CTRL</kbd>+<kbd>r</kbd> |
+| Do the block around the cursor (or the whole file) | <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd> | <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd> |
+| Insert a break line | <kbd>CTRL</kbd>+<kbd>s</kbd> | <kbd>CTRL</kbd>+<kbd>k</kbd>, <kbd>CTRL</kbd>+<kbd>s</kbd> |
+| Help for the selected command | <kbd>F1</kbd> | <kbd>F1</kbd> |
+| Data Browser for the selected variables | <kbd>F2</kbd> or <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>b</kbd> | <kbd>F2</kbd> |
+| Toggle `/* */` (selection) or `//` (line) | <kbd>CMD</kbd>+<kbd>/</kbd> | <kbd>CTRL</kbd>+<kbd>/</kbd> |
+| Word under the cursor → `` `word' `` | <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>\`</kbd> (selected text: <kbd>\`</kbd>) | <kbd>ALT</kbd>+<kbd>\`</kbd> |
+| Insert date and time | <kbd>F5</kbd> | <kbd>F5</kbd> |
+
+On Windows, <kbd>CTRL</kbd>+<kbd>d</kbd>, <kbd>CTRL</kbd>+<kbd>r</kbd> and <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd> follow Stata's own Do-file Editor, so in Stata files they replace Sublime's *Quick Add Next*, *Goto Symbol* and *Duplicate Line*. Change them in `Preferences > Package Settings > Stata Improved Editor > Key Bindings`.
+
+On macOS, <kbd>CMD</kbd>+<kbd>\`</kbd> is left to the system (switch windows), and <kbd>F2</kbd> is also Sublime's *Next Bookmark*: to get that back in Stata files add `{ "keys": ["f2"], "command": "next_bookmark" }` to your own key bindings, or use <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>b</kbd> for the Data Browser. To drop the `replace` template, delete `replace.sublime-snippet` or override its trigger.
+
+New optional settings: `cd_to_file_directory` (make the file's folder Stata's working directory), `send_whole_lines` (send whole lines even if only part is selected) and `local_macros_persist` (keep local macros between sends).
+
+Further tips:
+* **Multi-select** (e.g. every occurrence of a variable) is a Sublime Text feature: select the word and press <kbd>CMD</kbd>+<kbd>d</kbd> repeatedly (<kbd>CTRL</kbd>+<kbd>d</kbd> on Windows/Linux, which this package uses in Stata files, so use <kbd>ALT</kbd>+<kbd>F3</kbd> there to select all occurrences).
+* **Highlight more commands**: run `Stata Improved: Highlight Additional Commands` from the Command Palette and enter e.g. `esttab reghdfe` (kept in the `custom_commands` setting).
+* **Macros** have their own color scope (`variable.other.macro`) for both `` `local' `` and `$global`/`${global}`, so a color scheme can show them alike.
+* **Your own snippets**: save a `.sublime-snippet` file in `Packages/User` with `<scope>source.stata</scope>` and a `<tabTrigger>`, then type the trigger and press <kbd>Tab</kbd>. A snippet that appears in the completions list but does nothing usually has broken XML, e.g. a doubled closing tag such as `</scope>scope>`.
+
 ### 🎷Code Execution
 <kbd>CTRL</kbd>+<kbd>d</kbd> -- Execute (do) selected codes. 
 As opposite to "do" the code by <kbd>CTRL</kbd>+<kbd>d</kbd>, <kbd>CTRL</kbd>+<kbd>r</kbd> can "run" the code quietly in Stata. 
@@ -66,7 +106,7 @@ Say, you have the following do-file:
  
 <img src="https://raw.githubusercontent.com/zizhongyan/StataImproved/master/pictures/tu2.png" width="680">
 
-1) The "break line" can be simply inserted by <kbd>CTRL</kbd>+<kbd>s</kbd> .
+1) The "break line" can be simply inserted by <kbd>CTRL</kbd>+<kbd>s</kbd> (Windows: <kbd>CTRL</kbd>+<kbd>k</kbd>, <kbd>CTRL</kbd>+<kbd>s</kbd>).
 
 2) Put the cursor within a block, click  <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>d</kbd>  to execute this block.
 
@@ -145,9 +185,11 @@ Select any variable(s), press <kbd>F2</kbd>  to see the data browser.
 https://www.youtube.com/watch?v=4vvsk8lG6fY&t=389s
 
 ## Multiple Instances of Stata
-If you openned multiple instances of Stata, please note that this plugin will send the code to your MOST RECENTLY OPENNED Stata session. 
+**macOS:** If you openned multiple instances of Stata, please note that this plugin will send the code to your MOST RECENTLY OPENNED Stata session. 
 
-If different versions of Stata are installed in your Mac (e.g. both Stata 14 and Stata 15), the plugin will send code to the most updated version of Stata (i.e. Stata 15). 
+If different versions of Stata are installed in your Mac (e.g. both Stata 14 and Stata 15), the plugin will send code to the most updated version of Stata (i.e. Stata 15). To use another version, set e.g. `"stata_version": 17` in `Preferences > Package Settings > Stata Improved Editor > Settings`.
+
+**Windows:** code goes to the Stata window that is on top of the others, i.e. the one you used most recently (a minimized Stata counts last). If no Stata is running, the newest installed Stata is started (or the one set in `"stata_path"`). If you start Stata yourself and send code right away, the plugin waits for that Stata instead of starting a second one.
 
 
  
@@ -156,16 +198,18 @@ If different versions of Stata are installed in your Mac (e.g. both Stata 14 and
 1, This plugin is motivated by the article ["Some notes on text editors for Stata users"](http://fmwww.bc.edu/repec/bocode/t/textEditors.html#vim) By Nicolas J. Cox, and some part of the code is motivated and modified based on following packages: [StataEditor](https://github.com/mattiasnordin/) for the auto-completion, and [StataEnhanced by Andrew Heiss] (https://github.com/andrewheiss/) for the AppleScript.
 ).
 
-This plugin basically creates a temporary do-file, which is then sent to the Stata to execute. All temporary cache files will be removed shortly when you close the Stata session.
+This plugin basically creates a temporary do-file, which is then sent to the Stata to execute. Temporary do-files are kept in a `StataImproved` folder inside the system temp directory and removed after a day.
 
 
-2, This package is for macOS only. For Windows users, please follow the instructions in the Nicolas J. Cox's webpage above.
+2, This package supports macOS (AppleScript) and Windows (typing into Stata's Command window; optionally Stata Automation). Linux is not supported yet.
  
         
-3, This plugin has been tested on macOS Monterey, and supports Stata 13-19 (StataNow) SE/MP/IC.
+3, This plugin has been tested on macOS Monterey and (Windows 11, Sublime Text 4 build 4215) with Stata 18; it is meant to support Stata 13-19 (StataNow) SE/MP/IC.
 
 
 ## 🎼 Update history 🎼 
+**v2.0.0**: **Sublime Text 4** and **Windows** support; key bindings scoped to Stata files; fixes #3 (`local_macros_persist`), #9, #19, #20 (`cd_to_file_directory`), #21, #24, #25 (`send_whole_lines`), #27, #28 (and its duplicate #32), #29, #30, #34, #35, #37, #38, #39; docs for #14, #26, #31.
+
 **v1.3.19 (01/Jan/26)**: Full support for **Stata 19** and  **StataNow** is made.  
 
 **v1.3.17 (29/Apr/23)**: Full support for **Stata 18** is made.  

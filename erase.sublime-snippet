@@ -3,6 +3,6 @@
 erase "${1:file}.dta"    
 ]]></content>
 	<tabTrigger>erase</tabTrigger>
-	<scope>source.stata</scope>scope>
-	<description>erase</description>description
+	<scope>source.stata</scope>
+	<description>erase</description>
 </snippet>
