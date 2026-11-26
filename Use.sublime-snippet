@@ -3,6 +3,6 @@
 use "${1:file}.dta" , clear  
 ]]></content>
 	<tabTrigger>use</tabTrigger>
-	<scope>source.stata</scope>scope>
-	<description>Use</description>description
+	<scope>source.stata</scope>
+	<description>Use</description>
 </snippet>

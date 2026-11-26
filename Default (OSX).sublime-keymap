@@ -1,41 +1,38 @@
 [
-  {
-    "keys": ["ctrl+d"], "command": "lines_to_stata"
+  // Stata Improved Editor, macOS. Every binding only applies in Stata files.
+  { "keys": ["ctrl+d"], "command": "lines_to_stata", "context":
+    [ { "key": "selector", "operator": "equal", "operand": "source.stata" } ]
   },
-  {
-    "keys": ["super+enter"], "command": "lines_to_stata"
+  { "keys": ["super+enter"], "command": "lines_to_stata", "context":
+    [ { "key": "selector", "operator": "equal", "operand": "source.stata" } ]
   },
-  {
-    "keys": ["ctrl+r"], "command": "lines_stata_run"
+  { "keys": ["ctrl+r"], "command": "lines_stata_run", "context":
+    [ { "key": "selector", "operator": "equal", "operand": "source.stata" } ]
+  },
+  { "keys": ["ctrl+shift+d"], "command": "piu_sign", "context":
+    [ { "key": "selector", "operator": "equal", "operand": "source.stata" } ]
+  },
+  { "keys": ["ctrl+s"], "command": "insert", "args": {"characters": "\n/*  ------- break line ------- (by Stata Improved Editor (piu_sign) )  */ \n"}, "context":
+    [ { "key": "selector", "operator": "equal", "operand": "source.stata" } ]
   },
   { "keys": ["f1"], "command": "stata_help", "context":
-    [
-      { "key": "selector", "operator": "equal", "operand": "source.stata" }
-    ]
-  } ,
+    [ { "key": "selector", "operator": "equal", "operand": "source.stata" } ]
+  },
   { "keys": ["f2"], "command": "stata_bro", "context":
-    [
-      { "key": "selector", "operator": "equal", "operand": "source.stata" }
-    ]
-  } ,
-  {
-    "keys": ["ctrl+shift+d"], "command": "piu_sign"
+    [ { "key": "selector", "operator": "equal", "operand": "source.stata" } ]
+  },
+  { "keys": ["ctrl+alt+b"], "command": "stata_bro", "context":
+    [ { "key": "selector", "operator": "equal", "operand": "source.stata" } ]
   },
   { "keys": ["super+/"], "command": "stata_toggle", "context":
-    [
-      { "key": "selector", "operator": "equal", "operand": "source.stata" }
-    ]
-  }, 
-  {
-    "keys": ["ctrl+s"], "command": "insert", "args": {"characters": "\n/*  ------- break line ------- (by the Stata editor for macOS (piu_sign) )  */ \n"}
+    [ { "key": "selector", "operator": "equal", "operand": "source.stata" } ]
   },
-  { "keys": ["super+`"], "command": "stata_local", "context":
-    [
-      { "key": "selector", "operator": "equal", "operand": "source.stata" }
-    ]
+  { "keys": ["ctrl+alt+`"], "command": "stata_local", "context":
+    [ { "key": "selector", "operator": "equal", "operand": "source.stata" } ]
   },
   { "keys": ["$"], "command": "stata_macro", "context":
     [
+      { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
       { "key": "selector", "operator": "equal", "operand": "source.stata" }
     ]
   },
@@ -43,7 +40,7 @@
     [
       { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
       { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
-      { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.single", "match_all": true },
+      { "key": "eol_selector", "operator": "not_equal", "operand": "variable.other.macro.local", "match_all": true },
       { "key": "selector", "operator": "equal", "operand": "source.stata", "match_all": true }
     ]
   },
@@ -53,7 +50,11 @@
       { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
       { "key": "selector", "operator": "equal", "operand": "source.stata", "match_all": true }
     ]
-  }, 
-  { "keys": ["f5"], "command": "insert_datetime"},
-  { "keys": ["ctrl+="], "command": "reindent", "args": {"single_line": false}}
-]  
+  },
+  { "keys": ["f5"], "command": "insert_datetime", "context":
+    [ { "key": "selector", "operator": "equal", "operand": "source.stata" } ]
+  },
+  { "keys": ["ctrl+="], "command": "reindent", "args": {"single_line": false}, "context":
+    [ { "key": "selector", "operator": "equal", "operand": "source.stata" } ]
+  }
+]

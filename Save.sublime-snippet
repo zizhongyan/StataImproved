@@ -3,6 +3,6 @@
 save "${1:file}.dta" , replace  
 ]]></content>
 	<tabTrigger>sav</tabTrigger>
-	<scope>source.stata</scope>scope>
-	<description>Save</description>description
+	<scope>source.stata</scope>
+	<description>Save</description>
 </snippet>

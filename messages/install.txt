@@ -1,8 +1,22 @@
 -------------------------------------
-Improved Stata Editor for mac users 
+Stata Improved Editor
 -------------------------------------
 
-Full support Stata 13-19 (StataNow) & mac OS Catalina.
+Edit Stata do-files in Sublime Text 4 (and 3) on macOS and Windows and
+send the code to Stata.
+
+Supports Stata 13-19 (StataNow).
+
+* macOS: sends code to the newest installed Stata (set "stata_version" in
+  the settings to pick another one).
+* Windows: nothing to set up. Code is typed into Stata's Command window;
+  if no Stata is running, the newest installed Stata is started.
+
+Keys (only in Stata files): Ctrl+D do, Ctrl+R run, Ctrl+Shift+D block,
+F1 help, F2 browse. Windows: Ctrl+K Ctrl+S inserts a block break line.
+Settings: Preferences > Package Settings > Stata Improved Editor.
+
+Please restart Sublime Text after installing.
 
 Project homepage: https://github.com/zizhongyan/StataImproved
 

@@ -6,6 +6,6 @@ program define ${1:Name}
 end // end of program ${1:Name}
 ]]></content>
 	<tabTrigger>prog</tabTrigger>
-	<scope>source.stata</scope>scope>
-	<description>Program</description>description
+	<scope>source.stata</scope>
+	<description>Program</description>
 </snippet>

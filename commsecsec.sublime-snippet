@@ -6,6 +6,6 @@
 ${3:Content}
 ]]></content>
 	<tabTrigger>comm-subsec</tabTrigger>
-	<scope>source.stata</scope>scope>
-	<description>Sub Section Header</description>description
+	<scope>source.stata</scope>
+	<description>Sub Section Header</description>
 </snippet>

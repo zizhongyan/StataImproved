@@ -11,6 +11,6 @@ ${4:Content}
 
 ]]></content>
 	<tabTrigger>comm-s</tabTrigger>
-	<scope>source.stata</scope>scope>
-	<description>Section Header</description>description
+	<scope>source.stata</scope>
+	<description>Section Header</description>
 </snippet>

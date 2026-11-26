@@ -3,6 +3,6 @@
 merge  ${1:how}  ${2:variables} using "${3:file}.dta"   
 ]]></content>
 	<tabTrigger>merge</tabTrigger>
-	<scope>source.stata</scope>scope>
-	<description>Merge</description>description
+	<scope>source.stata</scope>
+	<description>Merge</description>
 </snippet>

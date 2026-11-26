@@ -1,0 +1,44 @@
+{
+	// macOS: which Stata receives the code. "auto" uses the newest installed
+	// version; a number such as 18 pins that version (com.stata.stata18).
+	"stata_version": "auto",
+
+	// Before code from a saved file is sent, make that file's folder Stata's
+	// working directory (`cd`).
+	"cd_to_file_directory": false,
+
+	// Send the whole line(s) touched by a selection, not only the selected
+	// characters (like Stata's own Do-file Editor).
+	"send_whole_lines": false,
+
+	// Send code with `include` instead of `do`, so local macros set by one
+	// send are still there for the next one.
+	"local_macros_persist": false,
+
+	// Extra commands to syntax-highlight (e.g. ["esttab", "reghdfe"]); easiest to
+	// set with the command "Stata Improved: Highlight Additional Commands".
+	"custom_commands": [],
+
+	// Folder for the temporary do-files that are sent to Stata.
+	// Empty: a "StataImproved" folder inside the system temp directory.
+	// Windows: with a minimized Stata, a path with non-ASCII characters (e.g. a
+	// Chinese user name) needs Stata 14 or later; an ASCII-only folder avoids that.
+	"temp_directory": "",
+
+	// Windows: how code reaches Stata.
+	// "window": typed into Stata's Command window (no setup; if no Stata is
+	//           running, one is started). Recommended.
+	// "automation": Stata Automation (COM); needs "Register Stata Automation"
+	//           once. Caution: Stata then exits when Sublime Text lets go of
+	//           it (e.g. some minutes after Sublime Text exits), without
+	//           asking to save data.
+	"windows_method": "window",
+
+	// Windows: Stata executable to start when none is running (and for
+	// "Register Stata Automation"). Empty: the newest one found in
+	// "C:\Program Files\Stata*" and similar folders.
+	"stata_path": "",
+
+	// Windows, "automation" only: COM ProgID of Stata Automation.
+	"windows_progid": "stata.StataOLEApp"
+}

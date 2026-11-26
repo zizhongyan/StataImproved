@@ -6,6 +6,6 @@
 ${3:Content}	 
 ]]></content>
 	<tabTrigger>comm-tripleline</tabTrigger>
-	<scope>source.stata</scope>scope>
-	<description>One line comments - more asterisks</description>description
+	<scope>source.stata</scope>
+	<description>One line comments - more asterisks</description>
 </snippet>

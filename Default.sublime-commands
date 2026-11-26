@@ -1,6 +1,26 @@
 [
+    { "caption": "Stata Improved: Do Selection or Current Line", "command": "lines_to_stata" },
+    { "caption": "Stata Improved: Run Selection or Current Line Quietly", "command": "lines_stata_run" },
+    { "caption": "Stata Improved: Do Block (or Whole File)", "command": "piu_sign" },
+    { "caption": "Stata Improved: Help for Selected Command", "command": "stata_help" },
+    { "caption": "Stata Improved: Browse Selected Variables", "command": "stata_bro" },
+    { "caption": "Stata Improved: Highlight Additional Commands", "command": "stata_custom_commands" },
+    { "caption": "Stata Improved: Register Stata Automation (Windows, optional)", "command": "stata_register_automation" },
     {
-        "caption": "Improved Stata Editor for macOS",
-        "command": "lines_to_stata"
-    } 
+        "caption": "Preferences: Stata Improved Editor Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/Stata Improved Editor/StataImproved.sublime-settings",
+            "default": "// Settings in here override those in \"Stata Improved Editor/StataImproved.sublime-settings\"\n{\n\t$0\n}\n"
+        }
+    },
+    {
+        "caption": "Preferences: Stata Improved Editor Key Bindings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/Stata Improved Editor/Default ($platform).sublime-keymap",
+            "user_file": "${packages}/User/Default ($platform).sublime-keymap",
+            "default": "[\n\t$0\n]\n"
+        }
+    }
 ]
