@@ -7,8 +7,8 @@ It supports Stata 13–19 (including StataNow) and Sublime Text 4 (and 3), with 
 > **Note:** To get started, please install [Sublime Text](https://www.sublimetext.com/download). After installing (or updating) this package, please **restart Sublime Text** so that all commands and key bindings load correctly.
 
 * Available via [Package Control](https://packagecontrol.io/packages/Stata%20Improved%20Editor) since **16 Jan 2017**.
-* Maintained by [Zizhong Yan](mailto:helloyzz@gmail.com). Last updated: **1 Jan 2026**. Feedback is welcome.
-
+* Maintained by Zizhong Yan. Last updated: **27 Nov 2026**. Feedback is welcome.
+* Contributors: [Zizhong Yan](https://zizhongyan.github.io), and [Dailin Ren](https://github.com/M-Patek).
 
 ## 🎼 News 🎼 
 **v2.0.0**: **Sublime Text 4** (Python 3.14 plugin host) and **Windows** support. On Windows, code is typed into Stata's Command window; no setup needed (see [Windows setup](#windows-setup)). Key bindings now only apply in Stata files; `$` alone types `$` again; <kbd>CMD</kbd>+<kbd>/</kbd> without a selection comments the line with `//`; the Stata version can be pinned in the settings. Fixes for one-letter words, unsaved files and temporary files (#37, #38, #39).
