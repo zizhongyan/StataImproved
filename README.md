@@ -11,7 +11,7 @@ It supports Stata 13–19 (including StataNow) and Sublime Text 4 (and 3), with 
 * Contributors: [Zizhong Yan](https://zizhongyan.github.io), and [Dailin Ren](https://github.com/M-Patek).
 
 ## 🎼 News 🎼 
-**v2.0.0**: **Sublime Text 4** (Python 3.14 plugin host) and **Windows** support. On Windows, code is typed into Stata's Command window; no setup needed (see [Windows setup](#windows-setup)). Key bindings now only apply in Stata files; `$` alone types `$` again; <kbd>CMD</kbd>+<kbd>/</kbd> without a selection comments the line with `//`; the Stata version can be pinned in the settings. Fixes for one-letter words, unsaved files and temporary files (#37, #38, #39).
+**v2.0.0 (27/Nov/26)**: **Sublime Text 4** (Python 3.14 plugin host) and **Windows** support. On Windows, code is typed into Stata's Command window; no setup needed (see [Windows setup](#windows-setup)). Key bindings now only apply in Stata files; `$` alone types `$` again; <kbd>CMD</kbd>+<kbd>/</kbd> without a selection comments the line with `//`; the Stata version can be pinned in the settings. Fixes for one-letter words, unsaved files and temporary files (#37, #38, #39).
 
 **v1.3.19 (01/Jan/26)**: Full support for **Stata 19** and  **StataNow** is made.  
 
